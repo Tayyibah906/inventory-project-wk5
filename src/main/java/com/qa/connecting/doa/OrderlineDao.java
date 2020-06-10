@@ -14,8 +14,10 @@ public class OrderlineDao {
 
 	public void insertOrderline(Orderline orderline) throws SQLException {
 		String sql = "insert into orderline(fk_order_id, fk_item_id, qty_ordered, status) values ('"
-				+ orderline.getFk_order_id() + "', '" + orderline.getFk_item_id() + "', '" + orderline.getQty_ordered()
-				+ "', '" + orderline.getStatus() + "');";
+				+ orderline.getFk_order_id() + "', '" 
+				+ orderline.getFk_item_id() + "', '" 
+				+ orderline.getQty_ordered()+ "', '" 
+				+ orderline.getStatus() + "');";
 
 		databaseConnection.sendUpdate(sql);
 	}

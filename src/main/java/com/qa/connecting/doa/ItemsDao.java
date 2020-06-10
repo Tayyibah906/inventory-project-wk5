@@ -16,8 +16,10 @@ public class ItemsDao {
 	}
 
 	public void insertItems(Items items) throws SQLException {
-		String sql = "insert into items(item, quantity, price, ) values ('" + items.getItemName() + "', '"
-				+ items.getQuantity() + "', '" + items.getPrice() + "');";
+		String sql = "insert into items(item, quantity, price, ) values ('"
+				+ items.getItemName() + "', '"
+				+ items.getQuantity() + "', '" 
+				+ items.getPrice() + "');";
 
 		databaseConnection.sendUpdate(sql);
 

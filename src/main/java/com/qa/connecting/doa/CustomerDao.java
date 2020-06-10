@@ -35,9 +35,12 @@ public class CustomerDao{
 	}
 
 	public void insertCustomer(Customer customer) throws SQLException {
-		String sql = "INSERT INTO customer(name, address, phone_number, email, age) values ('" + customer.getName()
-				+ "', '" + customer.getAddress() + "', '" + customer.getPhoneNumber() + "', '" + customer.getEmail()
-				+ "', '" + customer.getAge() + "');";
+		String sql = "INSERT INTO customer(name, address, phone_number, email, age) values ('" 
+						+ customer.getName()+ "', '" 
+						+ customer.getAddress() + "', '" 
+						+ customer.getPhoneNumber() + "', '" 
+						+ customer.getEmail()+ "', '" 
+						+ customer.getAge() + "');";
 			databaseConnection.sendUpdate(sql);
 	}
 
