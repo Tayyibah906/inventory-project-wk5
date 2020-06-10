@@ -42,14 +42,14 @@ public class ItemsDao {
 	}
 
 	public void updateItems(Items items) throws SQLException {
-		String sql = "Update into items(item, quantity, price, year_published) values ('" + items.getItemName() + "', '"
-				+ items.getQuantity() + "', '" + items.getPrice() + "');";
+		String sql = "Update  items set item='" + items.getItemName() + "', quanitity='"+ items.getQuantity() +	"', price='" + items.getPrice() 
+		+"'WHERE item_id ='" +items.getItemId()+"';";
 		
 		databaseConnection.sendUpdate(sql);
 	}
 
 	public void deleteItems(int itemId) throws SQLException {
-		String sql = "Delete from items WHERE item_id= '" + itemId + "');";
+		String sql = "Delete from items WHERE item_id= '" + itemId + "';";
 
 			databaseConnection.sendUpdate(sql);
 		

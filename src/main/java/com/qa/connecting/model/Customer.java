@@ -20,10 +20,13 @@ public class Customer {
 		this.age = age;
 	}
 	
-	public Customer(int customerId, String name, String email) {
+	public Customer(int customerId, String name, String address, String phoneNumber, String email, int age) {
 		this.customerId=customerId;
 		this.name = name;
+		this.address = address;
+		this.phoneNumber = phoneNumber;
 		this.email = email;
+		this.age = age;
 	}
 	
 	

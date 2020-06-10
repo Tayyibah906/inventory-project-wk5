@@ -42,9 +42,9 @@ public class CustomerDao{
 	}
 
 	public void updateCustomer(Customer customer) throws SQLException {
-		String sql = "Update customer set(name, adresss, phone_number, email, age) values ('" + customer.getName()
-				+ "', '" + customer.getAddress() + "', '" + customer.getPhoneNumber() + "', '" + customer.getEmail()
-				+ "', '" + customer.getAge() + "')"+ "WHERE customer_id ='" +customer.getCustomerId()+"';";
+		String sql = "Update customer set name='" +customer.getName()+ "', address='"+ customer.getAddress() + 
+				"',phone_number='"+ customer.getPhoneNumber() + "',email='"+ customer.getEmail()+ "', age='" + customer.getAge() 
+				+ "'"+ "'WHERE customer_id ='" +customer.getCustomerId()+"';";
 
 		
 			databaseConnection.sendUpdate(sql);
@@ -53,7 +53,7 @@ public class CustomerDao{
 	
 
 	public void deleteCustomer(int customerId) throws SQLException {
-		String sql = "Delete from customer WHERE customer_id= '" + customerId + "');";
+		String sql = "Delete from customer WHERE customer_id= '" + customerId + "';";
 
 		databaseConnection.sendUpdate(sql);
 	

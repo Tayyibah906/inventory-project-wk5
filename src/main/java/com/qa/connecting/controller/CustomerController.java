@@ -92,8 +92,9 @@ public class CustomerController {
 
 		LOGGER.info("age");
 		int age = input.getInt();
-		
-//		update customer?
+		Customer customer = new Customer(customerId, name, address, phoneNumber, email, age);
+		customerService.updateCustomer(customer);
+
 	}
 	
 	protected void deleteCustomer() {

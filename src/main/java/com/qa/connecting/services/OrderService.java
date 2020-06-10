@@ -30,21 +30,24 @@ public class OrderService {
 		}
 	}
 
-	List<Order> orders = null;
-	{
-		try {
-			orders = orderDao.readAllOrders();
-		} catch (SQLException e) {
-			LOGGER.error(e.getMessage());
-			for (StackTraceElement element : e.getStackTrace()) {
-				LOGGER.debug(element);
+	public void readOrders() {
+		List<Order> orders = null;
+		{
+			try {
+				orders = orderDao.readAllOrders();
+			} catch (SQLException e) {
+				LOGGER.error(e.getMessage());
+				for (StackTraceElement element : e.getStackTrace()) {
+					LOGGER.debug(element);
+				}
+			}
+
+			for (Order order : orders) {
+				LOGGER.info(order);
 			}
 		}
-
-		for (Order order : orders) {
-			LOGGER.info(order);
-		}
 	}
+
 	public void updateOrder(Order order) {
 		try {
 			orderDao.updateOrder(order);
@@ -67,4 +70,3 @@ public class OrderService {
 		}
 	}
 }
-

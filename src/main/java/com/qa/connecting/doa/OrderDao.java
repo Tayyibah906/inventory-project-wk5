@@ -39,8 +39,8 @@ public class OrderDao {
 
 
 	public void updateOrder(Order order) throws SQLException {
-		String sql = "Update into orders(fk_customer_id) values ('"
-				+ order.getFkCustomerId() + "');";
+		String sql = "UPDATE orders SET fk_customer_id='" 
+				+ order.getFkCustomerId() +  "'WHERE order_id ='" +order.getOrderId()+"';";
 
 			databaseConnection.sendUpdate(sql);
 	}
