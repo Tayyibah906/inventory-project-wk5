@@ -2,12 +2,14 @@ package com.qa.connecting.model;
 
 public class Orderline {
 	
+	private int orderline_id;
 	private int fk_order_id;
 	private int fk_item_id;
 	private int qty_ordered;
 	private String status;
 	
-	
+	public Orderline() {
+	}
 	public Orderline(int fk_order_id, int fk_item_id, int qty_ordered, String status) {
 		this.fk_order_id=fk_order_id;
 		this.fk_item_id=fk_item_id;
@@ -41,5 +43,19 @@ public class Orderline {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+
+
+
+	public int getOrderline_id() {
+		return orderline_id;
+	}
+
+
+
+
+	public void setOrderline_id(int orderline_id) {
+		this.orderline_id = orderline_id;
 	}
 }

@@ -2,26 +2,27 @@ package com.qa.connecting.model;
 
 public class Items {
 
-	private String item;
+	private int itemId;
+	private String itemName;
 	private int quantity;
 	private double price;
-	private int year_published;
 	
-	public Items(String item, int quantity, double price, int year_published) {
-		this.item = item;
+	public Items() {
+	}
+	
+	public Items(String itemName, int quantity, double price) {
+		this.setItemName(itemName);
 		this.quantity=quantity;
 		this.price=price;
-		this.year_published=year_published;
 			
 	}
 	
-
-	public String getItem() {
-		return item;
-	}
-
-	public void setItem(String item) {
-		this.item = item;
+	public Items(int itemId, String itemName, int quantity, double price) {
+		this.setItemId(itemId);
+		this.setItemName(itemName);
+		this.quantity=quantity;
+		this.price=price;
+			
 	}
 
 	public int getQuantity() {
@@ -40,12 +41,20 @@ public class Items {
 		this.price = price;
 	}
 
-	public int getYear_published() {
-		return year_published;
+	public int getItemId() {
+		return itemId;
 	}
 
-	public void setYear_published(int year_published) {
-		this.year_published = year_published;
+	public void setItemId(int itemId) {
+		this.itemId = itemId;
+	}
+
+	public String getItemName() {
+		return itemName;
+	}
+
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
 	}
 
 }

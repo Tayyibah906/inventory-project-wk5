@@ -1,0 +1,68 @@
+2020-06-10 11:41:50 INFO  Runner:17 - Database username: 
+2020-06-10 11:41:56 INFO  Runner:19 - Database password: 
+2020-06-10 11:42:33 INFO  Runner:17 - Database username: 
+2020-06-10 11:42:36 INFO  Runner:19 - Database password: 
+2020-06-10 11:42:45 INFO  Inv:31 - Please seelct from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-10 11:45:38 INFO  Runner:17 - Database username: 
+2020-06-10 11:45:40 INFO  Runner:19 - Database password: 
+2020-06-10 11:46:27 INFO  Runner:17 - Database username: 
+2020-06-10 11:46:30 INFO  Runner:19 - Database password: 
+2020-06-10 11:47:15 INFO  Runner:17 - Database username: 
+2020-06-10 11:47:22 INFO  Runner:17 - Database username: 
+2020-06-10 11:47:24 INFO  Runner:19 - Database password: 
+2020-06-10 11:47:29 INFO  Inv:31 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-10 11:49:38 INFO  Runner:17 - Database username: 
+2020-06-10 11:49:40 INFO  Runner:19 - Database password: 
+2020-06-10 11:49:51 INFO  Inv:31 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-10 11:49:55 WARN  Inv:40 - Not in the options. please choose from provided list
+2020-06-10 11:50:02 WARN  Inv:40 - Not in the options. please choose from provided list
+2020-06-10 11:50:07 INFO  Inv:31 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-10 11:50:45 INFO  Runner:17 - Database username: 
+2020-06-10 11:50:47 INFO  Runner:19 - Database password: 
+2020-06-10 11:50:52 INFO  Inv:31 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-10 12:56:06 INFO  Runner:17 - Database username: 
+2020-06-10 12:56:08 INFO  Runner:19 - Database password: 
+2020-06-10 12:56:13 INFO  Inv:32 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-10 12:56:17 WARN  Inv:42 - Not in the options. please choose from provided list
+2020-06-10 12:56:22 WARN  Inv:42 - Not in the options. please choose from provided list
+2020-06-10 12:58:16 INFO  Runner:17 - Database username: 
+2020-06-10 12:58:18 INFO  Runner:19 - Database password: 
+2020-06-10 12:58:22 INFO  Inv:32 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-10 12:58:25 INFO  Inv:50 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-10 12:58:30 INFO  CustomerController:47 - Name: 
+2020-06-10 12:58:37 INFO  CustomerController:50 - address:
+2020-06-10 12:58:43 INFO  CustomerController:53 - phone_number
+2020-06-10 12:58:47 INFO  CustomerController:56 - email
+2020-06-10 12:58:56 INFO  CustomerController:59 - age
+2020-06-10 12:58:58 ERROR CustomerService:27 - Unknown column 'adresss' in 'field list'
+2020-06-10 12:58:58 DEBUG CustomerService:29 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.qa.connecting.doa.DatabaseConnection.sendUpdate(DatabaseConnection.java:38)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.qa.connecting.doa.CustomerDao.insertCustomer(CustomerDao.java:38)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.qa.connecting.services.CustomerService.insertCustomer(CustomerService.java:25)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.qa.connecting.controller.CustomerController.insert(CustomerController.java:63)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.qa.connecting.controller.CustomerController.run(CustomerController.java:26)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.qa.connecting.Inv.invMenu(Inv.java:66)
+2020-06-10 12:58:58 DEBUG CustomerService:29 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-10 13:00:45 INFO  Runner:17 - Database username: 
+2020-06-10 13:00:48 INFO  Runner:19 - Database password: 
+2020-06-10 13:00:55 INFO  Inv:32 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-10 13:00:59 INFO  Inv:50 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-10 13:01:02 INFO  CustomerController:47 - Name: 
+2020-06-10 13:01:05 INFO  CustomerController:50 - address:
+2020-06-10 13:01:11 INFO  CustomerController:53 - phone_number
+2020-06-10 13:01:14 INFO  CustomerController:56 - email
+2020-06-10 13:01:22 INFO  CustomerController:59 - age

@@ -4,13 +4,38 @@ import java.util.Scanner;
 
 public class Input {
 
-	private Scanner scanner = new Scanner(System.in);
+	public Input() {
+		
+	}
+
+	private static Scanner scan = new Scanner(System.in);
 
 	public String getInput() {
-		return scanner.nextLine();
+		return scan.nextLine();
+	}
+
+	public int getInt() {
+		int value;
+		while (true) {
+			try {
+				value = Integer.parseInt(scan.nextLine());
+				return value;
+			} catch (NumberFormatException exception) {
+				exception.printStackTrace();
+			}
+		}
+	}
+
+	public double getDouble() {
+		Double value;
+		while (true) {
+			try {
+				value = Double.parseDouble(scan.nextLine());
+				return value;
+			} catch (NumberFormatException exception) {
+				exception.printStackTrace();
+			}
+		}
 	}
 		
-	public int getInput() {
-			return scanner.nextLine();
-	}
 }
