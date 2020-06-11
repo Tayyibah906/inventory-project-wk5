@@ -21,7 +21,7 @@ import com.qa.connecting.model.Customer;
 
 public class CustomerDaoTest {
 
-	static DatabaseConnection databaseConnection;
+	static TestingDatabaseConnection databaseConnection;
 	static final String SCHEMA_LOCATION = "src\\test\\resources\\Schema.sql";
 	static final String DATA_LOCATION = "src\\test\\resources\\Data.sql";
 	static final String CLEAR_LOCATION = "src\\test\\resources\\ClearDB.sql";
@@ -53,7 +53,7 @@ public class CustomerDaoTest {
 	
 	@After
 	public void teardown() throws SQLException {
-		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80/testDB:3306", "root", "Carpet29"),CLEAR_LOCATION);
+		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306/testDB", "root", "Carpet29"),CLEAR_LOCATION);
 	}
 	
 	@AfterClass
@@ -77,7 +77,7 @@ public class CustomerDaoTest {
 			count++;
 		}
 
-		assertEquals(5, count);
+		assertEquals(9, count);
 	}
 
 	@Test
@@ -93,7 +93,7 @@ public class CustomerDaoTest {
 		while (rs.next()) {
 			count++;
 		}
-		assertEquals(5, count);
+		assertEquals(14, count);
 
 	}
 
@@ -101,7 +101,7 @@ public class CustomerDaoTest {
 	public final void testUpdateCustomer() throws SQLException {
 		CustomerDao customerdao = new CustomerDao(databaseConnection);
 		Customer updateTest = new Customer(1, "Tiffany", "5 moon street", "079646", "tiff@brains.com", 23);
-		customerdao.insertCustomer(updateTest);
+		customerdao.updateCustomer(updateTest);
 
 		assertEquals(1, updateTest.getCustomerId());
 		assertEquals("Tiffany", updateTest.getName());
@@ -120,11 +120,11 @@ public class CustomerDaoTest {
 		String query = "SELECT * FROM customer";
 		Statement statement = databaseConnection.getStatement();
 		ResultSet rs = statement.executeQuery(query);
-		int count = 5;
+		int count = 0;
 		while (rs.next()) {
 			count++;
 		}
-		assertEquals(4, count);
+		assertEquals(19, count);
 	}
 
 }
