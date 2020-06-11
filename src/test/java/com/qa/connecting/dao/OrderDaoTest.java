@@ -85,7 +85,7 @@ public class OrderDaoTest {
 
 	@Test
 	public final void testInsertOrder() throws SQLException {
-		Order insertTest = new Order(3);
+		Order insertTest = new Order(3,2);
 		orderdao.insertOrder(insertTest);
 
 		String query = "SELECT * FROM orders";
@@ -100,7 +100,7 @@ public class OrderDaoTest {
 	}
 
 	@Test
-	public final void testUpdateOrder() throws SQLException {
+	public  void testUpdateOrder() throws SQLException {
 		Order order = new Order(2,4);
 		orderdao.updateOrder(order);
 
@@ -110,9 +110,9 @@ public class OrderDaoTest {
 	}
 
 	@Test
-	public final void testDeleteOrder() throws SQLException {
+	public  void testDeleteOrder() throws SQLException {
 		OrderDao orderdao = new OrderDao(databaseConnection);
-		Order deleteTest = new Order(1);
+		Order deleteTest = new Order(1, 2);
 		orderdao.insertOrder(deleteTest);
 
 		String query = "SELECT * FROM orders";

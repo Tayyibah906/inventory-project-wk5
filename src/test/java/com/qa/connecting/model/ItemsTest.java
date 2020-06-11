@@ -15,14 +15,14 @@ public class ItemsTest {
 	}
 
 	@Test
-	public final void testItems() {
+	public  void testItems() {
 		assertEquals("SupermanComic", items.getItemName());
 		assertEquals(200, items.getQuantity(), 0);
 		assertEquals(3, items.getPrice(), 0);
 	}
 
 	@Test
-	public final void testItemsWithId() {
+	public  void testItemsWithId() {
 		items = new Items("BatmanComic", 20, 5);
 		assertEquals("BatmanComic", items.getItemName());
 		assertEquals(20, items.getQuantity(), 0);

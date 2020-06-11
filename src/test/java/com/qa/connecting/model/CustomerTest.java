@@ -34,7 +34,7 @@ public class CustomerTest {
 
 
 	@Test
-	public final void testCustomer() {
+	public  void testCustomer() {
 		assertEquals("Mocha", customer.getName());
 		assertEquals("34 Brown street", customer.getAddress());
 		assertEquals("0795823456", customer.getPhoneNumber());
@@ -43,7 +43,7 @@ public class CustomerTest {
 	}
 	
 	@Test
-	public final void testCustomerWithId() {
+	public  void testCustomerWithId() {
 		customer = new Customer(1, "Latte", "24 coffee grounds", "07643256723", "beans@cups.com", 10);
 		assertEquals(1, customer.getCustomerId(), 0);
 		assertEquals("Latte", customer.getName());

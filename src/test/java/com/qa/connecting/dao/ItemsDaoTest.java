@@ -64,7 +64,7 @@ public class ItemsDaoTest {
 	}
 
 	@Test
-	public final void testReadAllCustomers() throws SQLException {
+	public  void testReadAllCustomers() throws SQLException {
 		ItemsDao itemsdao = new ItemsDao(databaseConnection);
 		Items readTest = new Items(2, "The Wind in the Willows", 90, 9.99);
 		itemsdao.insertItems(readTest);
@@ -81,7 +81,7 @@ public class ItemsDaoTest {
 	}
 
 	@Test
-	public final void testInsertCustomer() throws SQLException {
+	public  void testInsertCustomer() throws SQLException {
 		ItemsDao itemsdao = new ItemsDao(databaseConnection);
 		Items insertTest = new Items("Pan returns", 13, 9.50);
 		itemsdao.insertItems(insertTest);
@@ -98,7 +98,7 @@ public class ItemsDaoTest {
 	}
 
 	@Test
-	public final void testUpdateCustomer() throws SQLException {
+	public  void testUpdateCustomer() throws SQLException {
 		ItemsDao itemsdao = new ItemsDao(databaseConnection);
 		Items updateTest = new Items(2, "The Wind", 99, 1.99);
 		itemsdao.insertItems(updateTest);
@@ -111,7 +111,7 @@ public class ItemsDaoTest {
 	}
 
 	@Test
-	public final void testDeleteCustomer() throws SQLException {
+	public  void testDeleteCustomer() throws SQLException {
 		ItemsDao itemsdao = new ItemsDao(databaseConnection);
 		Items deleteTest = new Items(1, "The Great Gatsby", 200, 29.99);
 		itemsdao.insertItems(deleteTest);
