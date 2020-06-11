@@ -1,11 +1,7 @@
 package com.qa.connecting.dao;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -17,48 +13,37 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.qa.connecting.Utils.DBConstants;
+import com.qa.connecting.Utils.TestUtils;
 import com.qa.connecting.model.Order;
 
 public class OrderDaoTest {
 
-	static TestingDatabaseConnection databaseConnection;
-	static final String SCHEMA_LOCATION = "src\\test\\resources\\Schema.sql";
-	static final String DATA_LOCATION = "src\\test\\resources\\Data.sql";
-	static final String CLEAR_LOCATION = "src\\test\\resources\\ClearDB.sql";
-	static final String DROP_LOCATION = "src\\test\\resources\\DropDB.sql";
+	private static TestingDatabaseConnection databaseConnection;
 
-	private OrderDao orderdao;
-	
-	private static void sendToDB(Connection connection, String fileLocation) {
-		try (BufferedReader br = new BufferedReader(new FileReader(fileLocation));) {
-			String string;
-			while ((string = br.readLine()) != null) {
-				try (Statement statement = connection.createStatement();) {
-					statement.executeUpdate(string);
-				}
-			}
-		} catch (SQLException | IOException e) {
-			e.printStackTrace();
-		}
-	}
+	private static OrderDao orderdao;
 
 	@BeforeClass
 	public static void intialise() throws SQLException {
-		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306", "root", "Carpet29"), SCHEMA_LOCATION);
+		orderdao = new OrderDao(databaseConnection);
+
 	}
 
 	@Before
 	public void setup() throws SQLException {
-		databaseConnection = new TestingDatabaseConnection("root", "Carpet29");
-		sendToDB(databaseConnection.getConnection(), DATA_LOCATION);
+		TestUtils.sendToDB(DriverManager.getConnection(DBConstants.URL, DBConstants.USER, DBConstants.PASSWORD),
+				TestUtils.SCHEMA_LOCATION);
+		databaseConnection = new TestingDatabaseConnection(DBConstants.USER, DBConstants.PASSWORD);
+		TestUtils.sendToDB(databaseConnection.getConnection(), TestUtils.DATA_LOCATION);
 		orderdao = new OrderDao(databaseConnection);
 	}
 
 	@After
 	public void teardown() throws SQLException {
-		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306/testDB", "root", "Carpet29"),
-				CLEAR_LOCATION);
-		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306", "root", "Carpet29"), DROP_LOCATION);
+		TestUtils.sendToDB(DriverManager.getConnection(DBConstants.URL + DBConstants.DB_NAME + DBConstants.DB_OPTIONS,
+				DBConstants.USER, DBConstants.PASSWORD), TestUtils.CLEAR_LOCATION);
+		TestUtils.sendToDB(DriverManager.getConnection(DBConstants.URL, DBConstants.USER, DBConstants.PASSWORD),
+				TestUtils.DROP_LOCATION);
 	}
 
 	@AfterClass
@@ -68,47 +53,42 @@ public class OrderDaoTest {
 
 	@Test
 	public final void testReadAllOrders() throws SQLException {
-		OrderDao orderdao = new OrderDao(databaseConnection);
-		Order readTest = new Order(4, 2);
-		orderdao.insertOrder(readTest);
-
-		String query = "SELECT * FROM orders";
-		Statement statement = databaseConnection.getStatement();
-		ResultSet rs = statement.executeQuery(query);
-		int count = 0;
-		while (rs.next()) {
-			count++;
-		}
-
-		assertEquals(4, count);
+		assertEquals(getCount(), orderdao.readAllOrders().size());
 	}
 
 	@Test
 	public final void testInsertOrder() throws SQLException {
+<<<<<<< HEAD
 		Order insertTest = new Order(3,2);
 		orderdao.insertOrder(insertTest);
+=======
+		final int count = getCount();
+>>>>>>> d3c3406f62e6ecc4bad5244468f81324f27b56cd
 
-		String query = "SELECT * FROM orders";
-		Statement statement = databaseConnection.getStatement();
-		ResultSet rs = statement.executeQuery(query);
-		int count = 0;
-		while (rs.next()) {
-			count++;
-		}
+		Order insertTest = new Order(3, 1);
+		orderdao.insertOrder(insertTest);
 
-		assertEquals(5, count);
+		assertEquals(count + 1, getCount());
 	}
 
 	@Test
+<<<<<<< HEAD
 	public  void testUpdateOrder() throws SQLException {
 		Order order = new Order(2,4);
+=======
+	public final void testUpdateOrder() throws SQLException {
+
+		Order order = new Order(2, 1);
+>>>>>>> d3c3406f62e6ecc4bad5244468f81324f27b56cd
 		orderdao.updateOrder(order);
 
-		ResultSet resultSet =databaseConnection.getStatement().executeQuery("SELECT fk_customer_id from orders where order_id = " + 2 );
+		ResultSet resultSet = databaseConnection.getStatement()
+				.executeQuery("SELECT fk_customer_id from orders where order_id = " + 2);
 		resultSet.next();
 		assertEquals(4, resultSet.getInt("fk_customer_id"));
 	}
 
+<<<<<<< HEAD
 	@Test
 	public  void testDeleteOrder() throws SQLException {
 		OrderDao orderdao = new OrderDao(databaseConnection);
@@ -116,14 +96,24 @@ public class OrderDaoTest {
 		orderdao.insertOrder(deleteTest);
 
 		String query = "SELECT * FROM orders";
+=======
+	private int getCount() throws SQLException {
+>>>>>>> d3c3406f62e6ecc4bad5244468f81324f27b56cd
 		Statement statement = databaseConnection.getStatement();
-		ResultSet rs = statement.executeQuery(query);
+		ResultSet rs = statement.executeQuery("SELECT * FROM orders");
 		int count = 0;
 		while (rs.next()) {
 			count++;
 		}
+		return count;
+	}
 
-		assertEquals(5, count);
+	@Test
+	public final void testDeleteOrder() throws SQLException {
+		final int count = getCount();
+		orderdao.deleteOrder(count);
+
+		assertEquals(count - 1, getCount());
 	}
 
 }

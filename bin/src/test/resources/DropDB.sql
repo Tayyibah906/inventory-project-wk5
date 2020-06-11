@@ -1,1 +1,1 @@
-DROP DATABASE testdb;
+DROP DATABASE testDB;
