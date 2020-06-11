@@ -1,4 +1,4 @@
-DELECT * FROM orderline;
-DELECT * FROM order;
-DELECT * FROM items;
-DELECT * FROM customer;
+DELETE FROM orderline;
+DELETE FROM orders;
+DELETE FROM items;
+DELETE FROM customer;
