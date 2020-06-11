@@ -75,7 +75,7 @@ public class OrderDaoTest {
 		ResultSet resultSet = databaseConnection.getStatement()
 				.executeQuery("SELECT fk_customer_id from orders where order_id = " + 2);
 		resultSet.next();
-		assertEquals(4, resultSet.getInt("fk_customer_id"));
+		assertEquals(1, resultSet.getInt("fk_customer_id"));
 	}
 
 
