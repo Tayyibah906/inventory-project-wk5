@@ -1,7 +1,8 @@
-package com.qa.connecting.doa;
+package com.qa.connecting.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +18,8 @@ public class CustomerDao{
 
 	public List<Customer> readAllCustomers() throws SQLException {
 		String sql = "SELECT * FROM customer";
-		ResultSet resultSet = databaseConnection.sendQuery(sql);
+		Statement statement = databaseConnection.getStatement();
+		ResultSet resultSet = statement.executeQuery(sql);
 		ArrayList<Customer> customers = new ArrayList<>();
 		while(resultSet.next()) {
 			Customer customer = new Customer();
@@ -30,6 +32,8 @@ public class CustomerDao{
 			
 			customers.add(customer);
 		}
+		statement.close();
+		resultSet.close();
 		
 		return customers;
 	}
@@ -46,9 +50,8 @@ public class CustomerDao{
 
 	public void updateCustomer(Customer customer) throws SQLException {
 		String sql = "Update customer set name='" +customer.getName()+ "', address='"+ customer.getAddress() + 
-				"',phone_number='"+ customer.getPhoneNumber() + "',email='"+ customer.getEmail()+ "', age='" + customer.getAge() 
-				+ "'"+ "'WHERE customer_id ='" +customer.getCustomerId()+"';";
-
+				"',phone_number='"+ customer.getPhoneNumber() + "',email='"+ customer.getEmail()+ "', age=" + customer.getAge() 
+			+ " WHERE customer_id = " +customer.getCustomerId()+";";
 		
 			databaseConnection.sendUpdate(sql);
 		

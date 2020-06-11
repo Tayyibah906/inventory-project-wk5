@@ -7,6 +7,7 @@ name varchar (20) NOT NULL,
 Address varchar (30),
 phone_number varchar (11),
 email varchar (30),
+age int,
 PRIMARY KEY(customer_id)
 );
 
@@ -41,4 +42,3 @@ DESCRIBE customer;
 DESCRIBE items;
 DESCRIBE orders;
 DESCRIBE orderline;
-drop table orders;

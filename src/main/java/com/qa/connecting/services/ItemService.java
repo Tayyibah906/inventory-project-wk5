@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.qa.connecting.doa.ItemsDao;
+import com.qa.connecting.dao.ItemsDao;
 import com.qa.connecting.model.Items;
 
 public class ItemService {

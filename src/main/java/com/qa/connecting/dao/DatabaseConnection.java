@@ -1,12 +1,10 @@
-package com.qa.connecting.doa;
+package com.qa.connecting.dao;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DatabaseConnection  {
+public abstract class DatabaseConnection  {
 
 	private String user;
 	private String password;
@@ -18,19 +16,15 @@ public class DatabaseConnection  {
 		openConnection();
 	}
 
-	private void openConnection() throws SQLException {
-		connection = DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306/inventoryDB", user, password);
-	}
-
+	public abstract void openConnection();
+	
 	public void closeConnection() throws SQLException {
 		connection.close();
 	}
 
-	public ResultSet sendQuery(String sql) throws SQLException {
+	public Statement getStatement() throws SQLException {
 		Statement statement = connection.createStatement();
-		ResultSet resultSet = statement.executeQuery(sql);
-		statement.close();
-		return resultSet;
+		return statement;
 	}
 
 	public void sendUpdate(String sql) throws SQLException {

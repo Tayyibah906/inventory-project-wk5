@@ -1,6 +1,10 @@
-package com.qa.connecting.doa;
+package com.qa.connecting.dao;
 
+//import java.sql.ResultSet;
 import java.sql.SQLException;
+//import java.sql.Statement;
+//import java.util.ArrayList;
+//import java.util.List;
 
 import com.qa.connecting.model.Orderline;
 
@@ -22,17 +26,24 @@ public class OrderlineDao {
 	}
 	
 	
-	public void selectOrderline(Orderline orderline) {
-		String sql = "SELECT * FROM orderline";
-
-		try {
-			databaseConnection.sendQuery(sql);
-		} catch (SQLException e) {
-			e.printStackTrace();
-			System.out.println("Instruction not executed");
-		}
-	}
-	
+//	public void List<Orderline> readAllorderlines() throws SQLException {
+//		String sql = "SELECT * FROM orderline";
+//		Statement statement = databaseConnection.getStatement();
+//		ResultSet resultSet = statement.executeQuery(sql);
+//		ArrayList<Orderline> orderline = new ArrayList<>();
+//		while(resultSet.next()) {
+//			Orderline orderline = new orderline();
+//			orderline.
+//			
+//			
+//			Orderline.add(orderline);
+//		}
+//		
+//		statement.close();
+//		resultSet.close();
+//		return orderline;
+//	}
+//	
 
 	public void UpdateOrderline(Orderline orderline) {
 		String sql = "Update into orderline(fk_order_id, fk_item_id, qty_ordered) values ('"

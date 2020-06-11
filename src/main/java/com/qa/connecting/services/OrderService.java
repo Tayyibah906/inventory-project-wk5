@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.qa.connecting.doa.OrderDao;
+import com.qa.connecting.dao.OrderDao;
 import com.qa.connecting.model.Order;
 
 public class OrderService {

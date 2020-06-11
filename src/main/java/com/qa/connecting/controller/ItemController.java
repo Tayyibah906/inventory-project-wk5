@@ -31,13 +31,13 @@ public class ItemController {
 			// If yes begin loop of asking all over again
 			break;
 		case READ:
-//			customerDao.readAllItems();
+			readAllItems();
 			break;
 		case UPDATE:
-//			customerDao.updateItems();
+			updateItems();
 			break;
 		case DELETE:
-//			customerDao.deleteItems();
+			deleteItems();
 			break;
 		case RETURN:
 			break;
@@ -52,10 +52,10 @@ public class ItemController {
 		LOGGER.info("item name");
 		String itemName = input.getInput();
 
-		LOGGER.info("item name");
+		LOGGER.info("item quantity");
 		int quantity = input.getInt();
 
-		LOGGER.info("item name");
+		LOGGER.info("item price");
 		double price = input.getDouble();
 
 		Items item = new Items(itemName, quantity, price);

@@ -4,7 +4,8 @@ import java.sql.SQLException;
 
 import org.apache.log4j.Logger;
 
-import com.qa.connecting.doa.DatabaseConnection;
+import com.qa.connecting.dao.DatabaseConnection;
+import com.qa.connecting.dao.RemoteDatabaseConnection;
 import com.qa.connecting.utils.Input;
 
 public class Runner {
@@ -19,7 +20,7 @@ public class Runner {
 		LOGGER.info("Database password: ");
 		String password = input.getInput();
 
-		DatabaseConnection connection = new DatabaseConnection(user, password);
+		DatabaseConnection connection = new RemoteDatabaseConnection(user, password);
 
 		Inv inv = new Inv(input, connection);
 		inv.invMenu();

@@ -28,7 +28,7 @@ public class CustomerController {
 			// input
 			// check input is Y or N
 			// loop until answer is Y or N
-			
+
 			// If yes begin loop of asking all over again
 			break;
 		case READ:
@@ -67,13 +67,14 @@ public class CustomerController {
 
 		Customer customer = new Customer(name, address, phoneNumber, email, age);
 		customerService.insertCustomer(customer);
+		LOGGER.info("Customer added!");
+
 	}
 
-	
 	protected void readAllCustomers() {
-				customerService.readCustomer();
+		customerService.readCustomer();
 	}
-	
+
 	protected void updateCustomer() {
 		LOGGER.info("enter the Customer id you would like to update: ");
 		int customerId = input.getInt();
@@ -94,13 +95,16 @@ public class CustomerController {
 		int age = input.getInt();
 		Customer customer = new Customer(customerId, name, address, phoneNumber, email, age);
 		customerService.updateCustomer(customer);
+		LOGGER.info("Customer updated!");
 
 	}
-	
+
 	protected void deleteCustomer() {
 		LOGGER.info("enter the Customer id you would like to delete: ");
 		int customerId = input.getInt();
 		customerService.deleteCustomer(customerId);
+		LOGGER.info("Customer deleted!");
+
 	}
 
 }

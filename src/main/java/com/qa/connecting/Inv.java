@@ -6,16 +6,15 @@ import com.qa.connecting.controller.Action;
 import com.qa.connecting.controller.CustomerController;
 import com.qa.connecting.controller.ItemController;
 import com.qa.connecting.controller.OrderController;
-import com.qa.connecting.doa.CustomerDao;
-import com.qa.connecting.doa.DatabaseConnection;
-import com.qa.connecting.doa.ItemsDao;
-import com.qa.connecting.doa.OrderDao;
+import com.qa.connecting.dao.CustomerDao;
+import com.qa.connecting.dao.DatabaseConnection;
+import com.qa.connecting.dao.ItemsDao;
+import com.qa.connecting.dao.OrderDao;
 import com.qa.connecting.model.SelectableModels;
 import com.qa.connecting.services.CustomerService;
 import com.qa.connecting.services.ItemService;
 import com.qa.connecting.services.OrderService;
 import com.qa.connecting.utils.Input;
-
 
 public class Inv {
 
@@ -30,8 +29,8 @@ public class Inv {
 		this.databaseConnection = databaseConnection;
 	}
 
-	public void invMenu() {
-		while (true) {
+	private SelectableModels userSelectedModel() {
+
 		String sentence = "Please select from: ";
 		for (SelectableModels models : SelectableModels.values()) {
 			sentence += models + ", ";
@@ -50,12 +49,17 @@ public class Inv {
 			}
 		}
 
+		return selectedModel;
+	}
+	
+	private Action userSelectedAction() {
+
 		String actionSentence = "Please select from: ";
-		for (Action action: Action.values()) {
-			actionSentence+= action + ", ";
+		for (Action action : Action.values()) {
+			actionSentence += action + ", ";
 		}
 		LOGGER.info(actionSentence);
-		
+
 		Action selectedAction;
 		while (true) {
 			try {
@@ -66,27 +70,41 @@ public class Inv {
 				LOGGER.error("Not a valid selection. Please re-enter");
 			}
 		}
-		
-		switch (selectedModel) {
-		case CUSTOMERS:
-			CustomerController customerMenu = new CustomerController(input, new CustomerService(new CustomerDao(databaseConnection)));
-			customerMenu.run(selectedAction);
-			break;
-		case ITEMS:
-			ItemController itemMenu = new ItemController(input, new ItemService(new ItemsDao(databaseConnection)));
-			itemMenu.run(selectedAction);
-			break;
-		case ORDERS:
-			OrderController orderMenu = new OrderController(input, new OrderService(new OrderDao(databaseConnection)));
-			orderMenu.run(selectedAction);
-			break;
-		case EXIT:
-			System.exit(0);
-			break;
-		default:
-			System.out.println("Please choose from the options above.");
-			break;
-		}
+		return selectedAction;
+	}
+
+	public void invMenu() {
+		while (true) {
+
+			SelectableModels selectedModel = userSelectedModel();
+			Action selectedAction = null;
+			if (selectedModel != SelectableModels.EXIT) {				
+				selectedAction = userSelectedAction();
+			}
+
+			switch (selectedModel) {
+			case CUSTOMERS:
+				CustomerController customerMenu = new CustomerController(input,
+						new CustomerService(new CustomerDao(databaseConnection)));
+				customerMenu.run(selectedAction);
+				break;
+			case ITEMS:
+				ItemController itemMenu = new ItemController(input, new ItemService(new ItemsDao(databaseConnection)));
+				itemMenu.run(selectedAction);
+				break;
+			case ORDERS:
+				OrderController orderMenu = new OrderController(input,
+						new OrderService(new OrderDao(databaseConnection)));
+				orderMenu.run(selectedAction);
+				break;
+			case EXIT:
+				LOGGER.info("EXIT!!!!!");
+				System.exit(0);
+				break;
+			default:
+				System.out.println("Please choose from the options above.");
+				break;
+			}
 
 		}
 	}

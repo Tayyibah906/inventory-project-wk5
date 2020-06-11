@@ -1,4 +1,4 @@
-package com.qa.connecting.doa;
+package com.qa.connecting.dao;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;

@@ -11,22 +11,22 @@ public class CustomerTest {
 	@Before
 	public void setUp() throws Exception {
 		customer = new Customer("Mocha", "34 Brown street", "0795823456", "Mocha@roasted.com", 90);
-		
+		customer.setCustomerId(23);
 	}
 
-//	@Test
-//	public void settersTest() {
+	@Test
+	public void settersTest() {
 //		assertNotNull(customer.getCustomerId());
 //		assertNotNull(customer.getName());
 //		assertNotNull(customer.getAddress());
 //		assertNotNull(customer.getPhoneNumber());
 //		assertNotNull(customer.getEmail());
 //		assertNotNull(customer.getAge());
-//
-//		customer.setCustomerId(0);
-//		assertNotNull(customer.getCustomerId());
-//		customer.setName(null);
-//		assertNotNull(customer.getName());
+
+		customer.setCustomerId(20);
+		assertEquals(20, customer.getCustomerId());
+		customer.setName("mark");
+		assertEquals("mark", customer.getName());
 //		customer.setAddress(null);
 //		assertNotNull(customer.getAddress());
 //		customer.setPhoneNumber(null);
@@ -35,7 +35,7 @@ public class CustomerTest {
 //		assertNotNull(customer.getEmail());
 //		customer.setAge(0);
 //		assertNotNull(customer.getAge());
-//	}
+	}
 
 
 	@Test

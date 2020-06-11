@@ -55,6 +55,7 @@ public class OrderController {
 
 		Order order = new Order(fkCustomerId);
 		orderService.insertOrder(order);
+		
 	}
 
 	protected void readAllOrders() {
@@ -64,15 +65,18 @@ public class OrderController {
 		LOGGER.info("enter the Order id you would like to update: ");
 		int orderId = input.getInt();
 
-		LOGGER.info("Enter the customer ID you would like to uodate for this order: ");
+		LOGGER.info("Enter the customer ID you would like to update for this order: ");
 		int fkCustomerId = input.getInt();
 		
 		Order order = new Order(orderId,fkCustomerId);
 		orderService.updateOrder(order);
+		LOGGER.info("order updated!");
 	}
+	
 	protected void deleteOrder() {
+		LOGGER.info("enter the order id you would like to delete: ");
 		int orderId = input.getInt();
 		orderService.deleteOrder(orderId);
+		LOGGER.info("order deleted!");
 	}
-
 }

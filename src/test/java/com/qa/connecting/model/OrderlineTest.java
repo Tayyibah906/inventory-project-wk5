@@ -10,9 +10,9 @@ public class OrderlineTest {
 
 	@Test
 	public final void testOrderline() {
-		assertEquals(10, orderline.getFk_order_id(), 0);
-		assertEquals(20, orderline.getFk_item_id(), 0);
-		assertEquals(30, orderline.getQty_ordered(), 0);
+		assertEquals(10, orderline.getFk_order_id());
+		assertEquals(20, orderline.getFk_item_id());
+		assertEquals(30, orderline.getQty_ordered());
 	}
 
 }

@@ -66,3 +66,1080 @@
 2020-06-10 13:01:11 INFO  CustomerController:53 - phone_number
 2020-06-10 13:01:14 INFO  CustomerController:56 - email
 2020-06-10 13:01:22 INFO  CustomerController:59 - age
+2020-06-11 09:04:35 INFO  Runner:17 - Database username: 
+2020-06-11 09:04:39 INFO  Runner:19 - Database password: 
+2020-06-11 09:04:47 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:04:53 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:05:28 INFO  Runner:17 - Database username: 
+2020-06-11 09:05:31 INFO  Runner:19 - Database password: 
+2020-06-11 09:05:37 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:05:41 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:05:44 ERROR CustomerService:38 - Operation not allowed after ResultSet closed
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.mysql.jdbc.ResultSetImpl.checkClosed(ResultSetImpl.java:733)
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.mysql.jdbc.ResultSetImpl.next(ResultSetImpl.java:6279)
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.qa.connecting.doa.CustomerDao.readAllCustomers(CustomerDao.java:22)
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.qa.connecting.services.CustomerService.readCustomer(CustomerService.java:36)
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.qa.connecting.controller.CustomerController.readAllCustomers(CustomerController.java:74)
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.qa.connecting.controller.CustomerController.run(CustomerController.java:35)
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.qa.connecting.Inv.invMenu(Inv.java:73)
+2020-06-11 09:05:44 DEBUG CustomerService:40 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:05:57 INFO  Runner:17 - Database username: 
+2020-06-11 09:05:59 INFO  Runner:19 - Database password: 
+2020-06-11 09:06:06 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:06:14 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:06:17 INFO  CustomerController:53 - Name: 
+2020-06-11 09:06:22 INFO  CustomerController:56 - address:
+2020-06-11 09:06:31 INFO  CustomerController:59 - phone_number
+2020-06-11 09:06:36 INFO  CustomerController:62 - email
+2020-06-11 09:06:46 INFO  CustomerController:65 - age
+2020-06-11 09:06:50 ERROR CustomerService:26 - Data truncation: Data too long for column 'phone_number' at row 1
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3931)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.qa.connecting.doa.DatabaseConnection.sendUpdate(DatabaseConnection.java:38)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.qa.connecting.doa.CustomerDao.insertCustomer(CustomerDao.java:44)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.qa.connecting.services.CustomerService.insertCustomer(CustomerService.java:24)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.qa.connecting.controller.CustomerController.insert(CustomerController.java:69)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.qa.connecting.controller.CustomerController.run(CustomerController.java:26)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.qa.connecting.Inv.invMenu(Inv.java:73)
+2020-06-11 09:06:50 DEBUG CustomerService:28 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:06:50 INFO  CustomerController:27 - Would you like to add another customer?
+2020-06-11 09:06:50 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:07:07 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:07:10 INFO  CustomerController:53 - Name: 
+2020-06-11 09:07:14 INFO  CustomerController:56 - address:
+2020-06-11 09:07:19 INFO  CustomerController:59 - phone_number
+2020-06-11 09:07:25 INFO  CustomerController:62 - email
+2020-06-11 09:07:31 INFO  CustomerController:65 - age
+2020-06-11 09:07:34 INFO  CustomerController:27 - Would you like to add another customer?
+2020-06-11 09:07:34 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:07:43 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:08:36 INFO  Runner:17 - Database username: 
+2020-06-11 09:08:38 INFO  Runner:19 - Database password: 
+2020-06-11 09:08:50 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:08:53 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:09:00 INFO  ItemController:52 - item name
+2020-06-11 09:09:07 INFO  ItemController:55 - item name
+2020-06-11 09:10:13 INFO  Runner:17 - Database username: 
+2020-06-11 09:10:17 INFO  Runner:19 - Database password: 
+2020-06-11 09:10:21 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:10:24 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:10:28 INFO  CustomerController:78 - enter the Customer id you would like to update: 
+2020-06-11 09:10:31 INFO  CustomerController:81 - Name: 
+2020-06-11 09:10:37 INFO  CustomerController:84 - address:
+2020-06-11 09:10:46 INFO  CustomerController:87 - phone_number
+2020-06-11 09:10:52 INFO  CustomerController:90 - email
+2020-06-11 09:11:00 INFO  CustomerController:93 - age
+2020-06-11 09:11:04 ERROR CustomerService:53 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1'' at line 1
+2020-06-11 09:11:04 DEBUG CustomerService:55 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.qa.connecting.doa.DatabaseConnection.sendUpdate(DatabaseConnection.java:38)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.qa.connecting.doa.CustomerDao.updateCustomer(CustomerDao.java:53)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.qa.connecting.services.CustomerService.updateCustomer(CustomerService.java:51)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.qa.connecting.controller.CustomerController.updateCustomer(CustomerController.java:96)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.qa.connecting.controller.CustomerController.run(CustomerController.java:38)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.qa.connecting.Inv.invMenu(Inv.java:73)
+2020-06-11 09:11:04 DEBUG CustomerService:55 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:11:04 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:11:16 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:11:22 INFO  CustomerController:101 - enter the Customer id you would like to delete: 
+2020-06-11 09:11:25 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:12:31 INFO  Runner:17 - Database username: 
+2020-06-11 09:12:33 INFO  Runner:19 - Database password: 
+2020-06-11 09:12:52 INFO  Runner:17 - Database username: 
+2020-06-11 09:12:54 INFO  Runner:19 - Database password: 
+2020-06-11 09:13:05 INFO  Runner:17 - Database username: 
+2020-06-11 09:13:07 INFO  Runner:19 - Database password: 
+2020-06-11 09:18:37 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:18:56 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:19:03 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:19:32 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:19:36 INFO  ItemController:52 - item name
+2020-06-11 09:19:52 INFO  ItemController:55 - item quantity
+2020-06-11 09:19:55 INFO  ItemController:58 - item price
+2020-06-11 09:19:58 ERROR ItemService:26 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') values ('CaptainAmericaComic', '20', '4.0')' at line 1
+2020-06-11 09:19:58 DEBUG ItemService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 09:19:58 DEBUG ItemService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 09:19:58 DEBUG ItemService:28 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 09:19:58 DEBUG ItemService:28 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.qa.connecting.doa.DatabaseConnection.sendUpdate(DatabaseConnection.java:38)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.qa.connecting.doa.ItemsDao.insertItems(ItemsDao.java:24)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.qa.connecting.services.ItemService.insertItem(ItemService.java:24)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.qa.connecting.controller.ItemController.insert(ItemController.java:62)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.qa.connecting.controller.ItemController.run(ItemController.java:25)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.qa.connecting.Inv.invMenu(Inv.java:77)
+2020-06-11 09:19:58 DEBUG ItemService:28 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:19:58 INFO  ItemController:26 - Would you like to add another item?
+2020-06-11 09:19:58 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:23:53 INFO  Runner:17 - Database username: 
+2020-06-11 09:23:56 INFO  Runner:19 - Database password: 
+2020-06-11 09:24:02 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:24:06 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:24:08 INFO  ItemController:52 - item name
+2020-06-11 09:24:25 INFO  ItemController:55 - item quantity
+2020-06-11 09:24:29 INFO  ItemController:58 - item price
+2020-06-11 09:24:31 INFO  ItemController:26 - Would you like to add another item?
+2020-06-11 09:24:31 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:24:44 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:25:03 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:25:16 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:25:31 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:25:45 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:25:52 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:27:45 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:28:13 INFO  Runner:17 - Database username: 
+2020-06-11 09:28:15 INFO  Runner:19 - Database password: 
+2020-06-11 09:28:21 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:28:24 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:28:27 INFO  OrderController:53 - enter the Customer id you would like to create an order for: 
+2020-06-11 09:28:29 ERROR OrderService:26 - Column count doesn't match value count at row 1
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.qa.connecting.doa.DatabaseConnection.sendUpdate(DatabaseConnection.java:38)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.qa.connecting.doa.OrderDao.insertOrder(OrderDao.java:23)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.qa.connecting.services.OrderService.insertOrder(OrderService.java:24)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.insertOrder(OrderController.java:57)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.run(OrderController.java:26)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.qa.connecting.Inv.invMenu(Inv.java:81)
+2020-06-11 09:28:29 DEBUG OrderService:28 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:28:29 INFO  OrderController:27 - Would you like to add another order?
+2020-06-11 09:28:29 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:28:39 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:28:41 INFO  OrderController:53 - enter the Customer id you would like to create an order for: 
+2020-06-11 09:28:47 ERROR OrderService:26 - Column count doesn't match value count at row 1
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.qa.connecting.doa.DatabaseConnection.sendUpdate(DatabaseConnection.java:38)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.qa.connecting.doa.OrderDao.insertOrder(OrderDao.java:23)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.qa.connecting.services.OrderService.insertOrder(OrderService.java:24)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.insertOrder(OrderController.java:57)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.run(OrderController.java:26)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.qa.connecting.Inv.invMenu(Inv.java:81)
+2020-06-11 09:28:47 DEBUG OrderService:28 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:28:47 INFO  OrderController:27 - Would you like to add another order?
+2020-06-11 09:28:47 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:30:07 INFO  Runner:17 - Database username: 
+2020-06-11 09:30:09 INFO  Runner:19 - Database password: 
+2020-06-11 09:30:14 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:30:26 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:30:29 INFO  OrderController:53 - enter the Customer id you would like to create an order for: 
+2020-06-11 09:30:31 ERROR OrderService:26 - Cannot add or update a child row: a foreign key constraint fails (`inventoryDB`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`fk_customer_id`) REFERENCES `customer` (`customer_id`))
+2020-06-11 09:30:31 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 09:30:31 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 09:30:31 DEBUG OrderService:28 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 09:30:31 DEBUG OrderService:28 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.qa.connecting.doa.DatabaseConnection.sendUpdate(DatabaseConnection.java:38)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.qa.connecting.doa.OrderDao.insertOrder(OrderDao.java:23)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.qa.connecting.services.OrderService.insertOrder(OrderService.java:24)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.insertOrder(OrderController.java:57)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.run(OrderController.java:26)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.qa.connecting.Inv.invMenu(Inv.java:81)
+2020-06-11 09:30:31 DEBUG OrderService:28 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:30:31 INFO  OrderController:27 - Would you like to add another order?
+2020-06-11 09:30:31 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:30:47 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:30:50 ERROR OrderService:39 - Operation not allowed after ResultSet closed
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.mysql.jdbc.ResultSetImpl.checkClosed(ResultSetImpl.java:733)
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.mysql.jdbc.ResultSetImpl.next(ResultSetImpl.java:6279)
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.qa.connecting.doa.OrderDao.readAllOrders(OrderDao.java:30)
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.qa.connecting.services.OrderService.readOrders(OrderService.java:37)
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.qa.connecting.controller.OrderController.readAllOrders(OrderController.java:61)
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.qa.connecting.controller.OrderController.run(OrderController.java:35)
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.qa.connecting.Inv.invMenu(Inv.java:81)
+2020-06-11 09:30:50 DEBUG OrderService:41 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:30:58 INFO  Runner:17 - Database username: 
+2020-06-11 09:31:00 INFO  Runner:19 - Database password: 
+2020-06-11 09:31:06 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:31:10 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:31:14 INFO  OrderController:64 - enter the Order id you would like to update: 
+2020-06-11 09:31:17 INFO  OrderController:67 - Enter the customer ID you would like to uodate for this order: 
+2020-06-11 09:31:21 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:31:26 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:31:47 INFO  Runner:17 - Database username: 
+2020-06-11 09:31:49 INFO  Runner:19 - Database password: 
+2020-06-11 09:31:54 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:31:59 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:32:02 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:32:17 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:32:18 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:43:12 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:43:14 ERROR CustomerService:38 - Operation not allowed after ResultSet closed
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.mysql.jdbc.ResultSetImpl.checkClosed(ResultSetImpl.java:733)
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.mysql.jdbc.ResultSetImpl.next(ResultSetImpl.java:6279)
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.qa.connecting.doa.CustomerDao.readAllCustomers(CustomerDao.java:22)
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.qa.connecting.services.CustomerService.readCustomer(CustomerService.java:36)
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.qa.connecting.controller.CustomerController.readAllCustomers(CustomerController.java:73)
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.qa.connecting.controller.CustomerController.run(CustomerController.java:35)
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.qa.connecting.Inv.invMenu(Inv.java:73)
+2020-06-11 09:43:14 DEBUG CustomerService:40 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:47:04 INFO  Runner:17 - Database username: 
+2020-06-11 09:47:07 INFO  Runner:19 - Database password: 
+2020-06-11 09:47:11 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:47:14 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:47:15 INFO  CustomerService:45 - Customer [customer_id=1, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=20]
+2020-06-11 09:47:15 INFO  CustomerService:45 - Customer [customer_id=3, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 09:47:15 INFO  CustomerService:45 - Customer [customer_id=5, name=Jane, address=55 Potters Avenue, phone_number=55 Potters Avenue, email=Jane98@pobox.com, age=27]
+2020-06-11 09:47:15 INFO  CustomerService:45 - Customer [customer_id=6, name=john, address=56 zoo lane, phone_number=56 zoo lane, email=john@inbox.com, age=24]
+2020-06-11 09:47:15 INFO  CustomerService:45 - Customer [customer_id=7, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=0]
+2020-06-11 09:47:15 INFO  CustomerService:45 - Customer [customer_id=8, name=Bruce, address=87 Ivy Road, phone_number=87 Ivy Road, email=gotham@batbox.com, age=0]
+2020-06-11 09:47:15 INFO  CustomerService:45 - Customer [customer_id=9, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 09:47:15 INFO  CustomerService:45 - Customer [customer_id=10, name=Susan, address=19 Barnay Street, phone_number=19 Barnay Street, email=Susie@inbox.com, age=28]
+2020-06-11 09:47:15 INFO  CustomerService:45 - Customer [customer_id=11, name=Jane, address=55 Potters Avenue, phone_number=55 Potters Avenue, email=Jane98@pobox.com, age=27]
+2020-06-11 09:47:15 INFO  CustomerService:45 - Customer [customer_id=12, name=mary, address=66 lamb lane, phone_number=66 lamb lane, email=mary@sheepish.com, age=78]
+2020-06-11 09:47:15 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:48:02 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:48:06 INFO  CustomerController:100 - enter the Customer id you would like to delete: 
+2020-06-11 09:48:11 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:48:14 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:48:15 INFO  CustomerService:45 - Customer [customer_id=1, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=20]
+2020-06-11 09:48:15 INFO  CustomerService:45 - Customer [customer_id=3, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 09:48:15 INFO  CustomerService:45 - Customer [customer_id=5, name=Jane, address=55 Potters Avenue, phone_number=55 Potters Avenue, email=Jane98@pobox.com, age=27]
+2020-06-11 09:48:15 INFO  CustomerService:45 - Customer [customer_id=6, name=john, address=56 zoo lane, phone_number=56 zoo lane, email=john@inbox.com, age=24]
+2020-06-11 09:48:15 INFO  CustomerService:45 - Customer [customer_id=7, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=0]
+2020-06-11 09:48:15 INFO  CustomerService:45 - Customer [customer_id=8, name=Bruce, address=87 Ivy Road, phone_number=87 Ivy Road, email=gotham@batbox.com, age=0]
+2020-06-11 09:48:15 INFO  CustomerService:45 - Customer [customer_id=9, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 09:48:15 INFO  CustomerService:45 - Customer [customer_id=10, name=Susan, address=19 Barnay Street, phone_number=19 Barnay Street, email=Susie@inbox.com, age=28]
+2020-06-11 09:48:15 INFO  CustomerService:45 - Customer [customer_id=12, name=mary, address=66 lamb lane, phone_number=66 lamb lane, email=mary@sheepish.com, age=78]
+2020-06-11 09:48:15 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:48:21 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:48:23 INFO  CustomerController:77 - enter the Customer id you would like to update: 
+2020-06-11 09:48:27 INFO  CustomerController:80 - Name: 
+2020-06-11 09:48:32 INFO  CustomerController:83 - address:
+2020-06-11 09:48:36 INFO  CustomerController:86 - phone_number
+2020-06-11 09:48:43 INFO  CustomerController:89 - email
+2020-06-11 09:48:49 INFO  CustomerController:92 - age
+2020-06-11 09:48:52 ERROR CustomerService:53 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10'' at line 1
+2020-06-11 09:48:52 DEBUG CustomerService:55 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.qa.connecting.doa.DatabaseConnection.sendUpdate(DatabaseConnection.java:36)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.qa.connecting.doa.CustomerDao.updateCustomer(CustomerDao.java:57)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.qa.connecting.services.CustomerService.updateCustomer(CustomerService.java:51)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.qa.connecting.controller.CustomerController.updateCustomer(CustomerController.java:95)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.qa.connecting.controller.CustomerController.run(CustomerController.java:38)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.qa.connecting.Inv.invMenu(Inv.java:73)
+2020-06-11 09:48:52 DEBUG CustomerService:55 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:48:52 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:49:28 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:49:32 ERROR Inv:66 - Not a valid selection. Please re-enter
+2020-06-11 09:50:01 INFO  Runner:17 - Database username: 
+2020-06-11 09:50:05 INFO  Runner:19 - Database password: 
+2020-06-11 09:50:09 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:50:20 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:50:48 INFO  Runner:17 - Database username: 
+2020-06-11 09:50:50 INFO  Runner:19 - Database password: 
+2020-06-11 09:50:55 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:50:57 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:51:15 INFO  Runner:17 - Database username: 
+2020-06-11 09:51:17 INFO  Runner:19 - Database password: 
+2020-06-11 09:51:21 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:51:23 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:51:25 INFO  CustomerController:77 - enter the Customer id you would like to update: 
+2020-06-11 09:51:27 INFO  CustomerController:80 - Name: 
+2020-06-11 09:51:29 INFO  CustomerController:83 - address:
+2020-06-11 09:51:31 INFO  CustomerController:86 - phone_number
+2020-06-11 09:51:34 INFO  CustomerController:89 - email
+2020-06-11 09:51:36 INFO  CustomerController:92 - age
+2020-06-11 09:51:39 ERROR CustomerService:53 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''344''WHERE customer_id =10' at line 1
+2020-06-11 09:51:39 DEBUG CustomerService:55 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.qa.connecting.doa.DatabaseConnection.sendUpdate(DatabaseConnection.java:36)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.qa.connecting.doa.CustomerDao.updateCustomer(CustomerDao.java:57)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.qa.connecting.services.CustomerService.updateCustomer(CustomerService.java:51)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.qa.connecting.controller.CustomerController.updateCustomer(CustomerController.java:95)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.qa.connecting.controller.CustomerController.run(CustomerController.java:38)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.qa.connecting.Inv.invMenu(Inv.java:73)
+2020-06-11 09:51:39 DEBUG CustomerService:55 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:51:39 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:52:13 INFO  Runner:17 - Database username: 
+2020-06-11 09:52:15 INFO  Runner:19 - Database password: 
+2020-06-11 09:52:19 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:52:21 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:52:25 INFO  CustomerService:45 - Customer [customer_id=1, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=20]
+2020-06-11 09:52:25 INFO  CustomerService:45 - Customer [customer_id=3, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 09:52:25 INFO  CustomerService:45 - Customer [customer_id=5, name=Jane, address=55 Potters Avenue, phone_number=55 Potters Avenue, email=Jane98@pobox.com, age=27]
+2020-06-11 09:52:25 INFO  CustomerService:45 - Customer [customer_id=6, name=john, address=56 zoo lane, phone_number=56 zoo lane, email=john@inbox.com, age=24]
+2020-06-11 09:52:25 INFO  CustomerService:45 - Customer [customer_id=7, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=0]
+2020-06-11 09:52:25 INFO  CustomerService:45 - Customer [customer_id=8, name=Bruce, address=87 Ivy Road, phone_number=87 Ivy Road, email=gotham@batbox.com, age=0]
+2020-06-11 09:52:25 INFO  CustomerService:45 - Customer [customer_id=9, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 09:52:25 INFO  CustomerService:45 - Customer [customer_id=10, name=Susan, address=19 Barnay Street, phone_number=19 Barnay Street, email=Susie@inbox.com, age=28]
+2020-06-11 09:52:25 INFO  CustomerService:45 - Customer [customer_id=12, name=mary, address=66 lamb lane, phone_number=66 lamb lane, email=mary@sheepish.com, age=78]
+2020-06-11 09:52:25 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:52:27 WARN  Inv:49 - Not in the options. please choose from provided list
+2020-06-11 09:52:30 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:52:32 INFO  CustomerController:77 - enter the Customer id you would like to update: 
+2020-06-11 09:52:39 INFO  CustomerController:80 - Name: 
+2020-06-11 09:52:40 INFO  CustomerController:83 - address:
+2020-06-11 09:52:41 INFO  CustomerController:86 - phone_number
+2020-06-11 09:52:47 INFO  CustomerController:89 - email
+2020-06-11 09:52:49 INFO  CustomerController:92 - age
+2020-06-11 09:52:52 ERROR CustomerService:53 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''WHERE customer_id =10' at line 1
+2020-06-11 09:52:52 DEBUG CustomerService:55 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.qa.connecting.doa.DatabaseConnection.sendUpdate(DatabaseConnection.java:36)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.qa.connecting.doa.CustomerDao.updateCustomer(CustomerDao.java:57)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.qa.connecting.services.CustomerService.updateCustomer(CustomerService.java:51)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.qa.connecting.controller.CustomerController.updateCustomer(CustomerController.java:95)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.qa.connecting.controller.CustomerController.run(CustomerController.java:38)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.qa.connecting.Inv.invMenu(Inv.java:73)
+2020-06-11 09:52:52 DEBUG CustomerService:55 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:52:52 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:53:11 INFO  Runner:17 - Database username: 
+2020-06-11 09:53:13 INFO  Runner:19 - Database password: 
+2020-06-11 09:53:16 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:53:20 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:53:21 INFO  CustomerController:77 - enter the Customer id you would like to update: 
+2020-06-11 09:53:23 INFO  CustomerController:80 - Name: 
+2020-06-11 09:53:24 INFO  CustomerController:83 - address:
+2020-06-11 09:53:26 INFO  CustomerController:86 - phone_number
+2020-06-11 09:53:28 INFO  CustomerController:89 - email
+2020-06-11 09:53:32 INFO  CustomerController:92 - age
+2020-06-11 09:53:34 ERROR CustomerService:53 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'customer_id =10' at line 1
+2020-06-11 09:53:34 DEBUG CustomerService:55 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.qa.connecting.doa.DatabaseConnection.sendUpdate(DatabaseConnection.java:36)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.qa.connecting.doa.CustomerDao.updateCustomer(CustomerDao.java:57)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.qa.connecting.services.CustomerService.updateCustomer(CustomerService.java:51)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.qa.connecting.controller.CustomerController.updateCustomer(CustomerController.java:95)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.qa.connecting.controller.CustomerController.run(CustomerController.java:38)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.qa.connecting.Inv.invMenu(Inv.java:73)
+2020-06-11 09:53:34 DEBUG CustomerService:55 - com.qa.connecting.Runner.main(Runner.java:25)
+2020-06-11 09:53:34 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:55:02 INFO  Runner:17 - Database username: 
+2020-06-11 09:55:04 INFO  Runner:19 - Database password: 
+2020-06-11 09:55:08 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:55:11 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:55:14 INFO  CustomerController:77 - enter the Customer id you would like to update: 
+2020-06-11 09:55:14 INFO  CustomerController:80 - Name: 
+2020-06-11 09:55:16 INFO  CustomerController:83 - address:
+2020-06-11 09:55:18 INFO  CustomerController:86 - phone_number
+2020-06-11 09:55:20 INFO  CustomerController:89 - email
+2020-06-11 09:55:21 INFO  CustomerController:92 - age
+2020-06-11 09:55:26 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:55:30 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:55:31 INFO  CustomerService:45 - Customer [customer_id=1, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=20]
+2020-06-11 09:55:31 INFO  CustomerService:45 - Customer [customer_id=3, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 09:55:31 INFO  CustomerService:45 - Customer [customer_id=5, name=Jane, address=55 Potters Avenue, phone_number=55 Potters Avenue, email=Jane98@pobox.com, age=27]
+2020-06-11 09:55:31 INFO  CustomerService:45 - Customer [customer_id=6, name=john, address=56 zoo lane, phone_number=56 zoo lane, email=john@inbox.com, age=24]
+2020-06-11 09:55:31 INFO  CustomerService:45 - Customer [customer_id=7, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=0]
+2020-06-11 09:55:31 INFO  CustomerService:45 - Customer [customer_id=8, name=Bruce, address=87 Ivy Road, phone_number=87 Ivy Road, email=gotham@batbox.com, age=0]
+2020-06-11 09:55:31 INFO  CustomerService:45 - Customer [customer_id=9, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 09:55:31 INFO  CustomerService:45 - Customer [customer_id=10, name=wqq, address=qq, phone_number=qq, email=qq, age=3423]
+2020-06-11 09:55:31 INFO  CustomerService:45 - Customer [customer_id=12, name=mary, address=66 lamb lane, phone_number=66 lamb lane, email=mary@sheepish.com, age=78]
+2020-06-11 09:55:31 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:55:38 WARN  Inv:49 - Not in the options. please choose from provided list
+2020-06-11 09:55:41 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:55:45 INFO  CustomerController:53 - Name: 
+2020-06-11 09:55:48 INFO  CustomerController:56 - address:
+2020-06-11 09:55:50 INFO  CustomerController:59 - phone_number
+2020-06-11 09:55:52 INFO  CustomerController:62 - email
+2020-06-11 09:55:54 INFO  CustomerController:65 - age
+2020-06-11 09:56:03 INFO  CustomerController:27 - Would you like to add another customer?
+2020-06-11 09:56:03 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:56:06 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:56:08 INFO  CustomerService:45 - Customer [customer_id=1, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=20]
+2020-06-11 09:56:08 INFO  CustomerService:45 - Customer [customer_id=3, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 09:56:08 INFO  CustomerService:45 - Customer [customer_id=5, name=Jane, address=55 Potters Avenue, phone_number=55 Potters Avenue, email=Jane98@pobox.com, age=27]
+2020-06-11 09:56:08 INFO  CustomerService:45 - Customer [customer_id=6, name=john, address=56 zoo lane, phone_number=56 zoo lane, email=john@inbox.com, age=24]
+2020-06-11 09:56:08 INFO  CustomerService:45 - Customer [customer_id=7, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=0]
+2020-06-11 09:56:08 INFO  CustomerService:45 - Customer [customer_id=8, name=Bruce, address=87 Ivy Road, phone_number=87 Ivy Road, email=gotham@batbox.com, age=0]
+2020-06-11 09:56:08 INFO  CustomerService:45 - Customer [customer_id=9, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 09:56:08 INFO  CustomerService:45 - Customer [customer_id=10, name=wqq, address=qq, phone_number=qq, email=qq, age=3423]
+2020-06-11 09:56:08 INFO  CustomerService:45 - Customer [customer_id=12, name=mary, address=66 lamb lane, phone_number=66 lamb lane, email=mary@sheepish.com, age=78]
+2020-06-11 09:56:08 INFO  CustomerService:45 - Customer [customer_id=13, name=qwert, address=qwetty, phone_number=qwetty, email=qwerty, age=23332]
+2020-06-11 09:56:08 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:56:52 INFO  Runner:17 - Database username: 
+2020-06-11 09:56:54 INFO  Runner:19 - Database password: 
+2020-06-11 09:57:01 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:57:02 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 09:57:20 INFO  Runner:17 - Database username: 
+2020-06-11 09:57:24 INFO  Runner:19 - Database password: 
+2020-06-11 09:57:29 INFO  Inv:39 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 09:57:34 INFO  Inv:57 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 10:01:29 INFO  Runner:17 - Database username: 
+2020-06-11 10:01:31 INFO  Runner:19 - Database password: 
+2020-06-11 10:01:35 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:01:39 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 10:02:04 INFO  Runner:17 - Database username: 
+2020-06-11 10:02:06 INFO  Runner:19 - Database password: 
+2020-06-11 10:02:10 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:02:15 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 10:02:39 INFO  Runner:17 - Database username: 
+2020-06-11 10:02:41 INFO  Runner:19 - Database password: 
+2020-06-11 10:02:46 INFO  Inv:79 - HEKJHDKSJKSAHKJHKJ
+2020-06-11 10:02:46 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:03:20 INFO  Runner:17 - Database username: 
+2020-06-11 10:03:22 INFO  Runner:19 - Database password: 
+2020-06-11 10:04:03 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:04:38 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 10:05:10 INFO  Inv:98 - EXIT!!!!!
+2020-06-11 10:06:21 INFO  Runner:17 - Database username: 
+2020-06-11 10:06:23 INFO  Runner:19 - Database password: 
+2020-06-11 10:06:27 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:06:28 INFO  Inv:101 - EXIT!!!!!
+2020-06-11 10:19:48 INFO  Runner:18 - Database username: 
+2020-06-11 10:19:50 INFO  Runner:20 - Database password: 
+2020-06-11 10:20:07 INFO  Runner:18 - Database username: 
+2020-06-11 10:20:09 INFO  Runner:20 - Database password: 
+2020-06-11 10:20:56 INFO  Runner:18 - Database username: 
+2020-06-11 10:20:57 INFO  Runner:20 - Database password: 
+2020-06-11 10:21:03 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:21:07 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 10:21:09 INFO  CustomerService:45 - Customer [customer_id=1, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=20]
+2020-06-11 10:21:09 INFO  CustomerService:45 - Customer [customer_id=3, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 10:21:09 INFO  CustomerService:45 - Customer [customer_id=5, name=Jane, address=55 Potters Avenue, phone_number=55 Potters Avenue, email=Jane98@pobox.com, age=27]
+2020-06-11 10:21:09 INFO  CustomerService:45 - Customer [customer_id=6, name=john, address=56 zoo lane, phone_number=56 zoo lane, email=john@inbox.com, age=24]
+2020-06-11 10:21:09 INFO  CustomerService:45 - Customer [customer_id=7, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=0]
+2020-06-11 10:21:09 INFO  CustomerService:45 - Customer [customer_id=8, name=Bruce, address=87 Ivy Road, phone_number=87 Ivy Road, email=gotham@batbox.com, age=0]
+2020-06-11 10:21:09 INFO  CustomerService:45 - Customer [customer_id=9, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 10:21:09 INFO  CustomerService:45 - Customer [customer_id=10, name=wqq, address=qq, phone_number=qq, email=qq, age=3423]
+2020-06-11 10:21:09 INFO  CustomerService:45 - Customer [customer_id=12, name=mary, address=66 lamb lane, phone_number=66 lamb lane, email=mary@sheepish.com, age=78]
+2020-06-11 10:21:09 INFO  CustomerService:45 - Customer [customer_id=13, name=qwert, address=qwetty, phone_number=qwetty, email=qwerty, age=23332]
+2020-06-11 10:21:09 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:44:30 INFO  Runner:18 - Database username: 
+2020-06-11 10:44:34 INFO  Runner:20 - Database password: 
+2020-06-11 10:44:42 INFO  Runner:18 - Database username: 
+2020-06-11 10:44:46 INFO  Runner:20 - Database password: 
+2020-06-11 10:44:53 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:45:04 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 10:45:07 INFO  ItemController:52 - item name
+2020-06-11 10:45:16 INFO  Runner:18 - Database username: 
+2020-06-11 10:45:19 INFO  Runner:20 - Database password: 
+2020-06-11 10:45:28 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:45:30 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 10:45:32 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:55:20 INFO  Runner:18 - Database username: 
+2020-06-11 10:55:24 INFO  Runner:20 - Database password: 
+2020-06-11 10:55:34 INFO  Runner:18 - Database username: 
+2020-06-11 10:55:37 INFO  Runner:20 - Database password: 
+2020-06-11 10:55:42 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:55:45 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 10:55:51 ERROR ItemService:38 - Table 'inventoryDB.Items' doesn't exist
+2020-06-11 10:55:51 DEBUG ItemService:40 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 10:55:51 DEBUG ItemService:40 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 10:55:51 DEBUG ItemService:40 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 10:55:51 DEBUG ItemService:40 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2439)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1365)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.qa.connecting.dao.ItemsDao.readAllItems(ItemsDao.java:32)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.qa.connecting.services.ItemService.readItem(ItemService.java:36)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.qa.connecting.controller.ItemController.readAllItems(ItemController.java:66)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.qa.connecting.controller.ItemController.run(ItemController.java:34)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.qa.connecting.Inv.invMenu(Inv.java:93)
+2020-06-11 10:55:51 DEBUG ItemService:40 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 10:56:01 INFO  Runner:18 - Database username: 
+2020-06-11 10:56:03 INFO  Runner:20 - Database password: 
+2020-06-11 10:56:09 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:56:16 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 10:56:24 INFO  OrderController:53 - enter the Customer id you would like to create an order for: 
+2020-06-11 10:56:26 ERROR OrderService:26 - Cannot add or update a child row: a foreign key constraint fails (`inventoryDB`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`fk_customer_id`) REFERENCES `customer` (`customer_id`))
+2020-06-11 10:56:26 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 10:56:26 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 10:56:26 DEBUG OrderService:28 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 10:56:26 DEBUG OrderService:28 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.qa.connecting.dao.DatabaseConnection.sendUpdate(DatabaseConnection.java:32)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.qa.connecting.dao.OrderDao.insertOrder(OrderDao.java:24)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.qa.connecting.services.OrderService.insertOrder(OrderService.java:24)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.insertOrder(OrderController.java:57)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.run(OrderController.java:26)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.qa.connecting.Inv.invMenu(Inv.java:98)
+2020-06-11 10:56:26 DEBUG OrderService:28 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 10:56:26 INFO  OrderController:58 - order added!
+2020-06-11 10:56:26 INFO  OrderController:27 - Would you like to add another order?
+2020-06-11 10:56:26 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 10:59:51 INFO  Runner:18 - Database username: 
+2020-06-11 10:59:53 INFO  Runner:20 - Database password: 
+2020-06-11 11:00:01 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:00:04 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:00:07 ERROR Inv:70 - Not a valid selection. Please re-enter
+2020-06-11 11:00:11 INFO  OrderController:53 - enter the Customer id you would like to create an order for: 
+2020-06-11 11:00:13 ERROR OrderService:26 - Cannot add or update a child row: a foreign key constraint fails (`inventoryDB`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`fk_customer_id`) REFERENCES `customer` (`customer_id`))
+2020-06-11 11:00:13 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:00:13 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:00:13 DEBUG OrderService:28 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:00:13 DEBUG OrderService:28 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.qa.connecting.dao.DatabaseConnection.sendUpdate(DatabaseConnection.java:32)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.qa.connecting.dao.OrderDao.insertOrder(OrderDao.java:24)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.qa.connecting.services.OrderService.insertOrder(OrderService.java:24)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.insertOrder(OrderController.java:57)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.run(OrderController.java:26)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.qa.connecting.Inv.invMenu(Inv.java:98)
+2020-06-11 11:00:13 DEBUG OrderService:28 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:00:13 INFO  OrderController:27 - Would you like to add another order?
+2020-06-11 11:00:13 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:00:35 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:00:41 ERROR ItemService:38 - Table 'inventoryDB.Items' doesn't exist
+2020-06-11 11:00:41 DEBUG ItemService:40 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:00:41 DEBUG ItemService:40 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:00:41 DEBUG ItemService:40 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:00:41 DEBUG ItemService:40 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2439)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1365)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.qa.connecting.dao.ItemsDao.readAllItems(ItemsDao.java:32)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.qa.connecting.services.ItemService.readItem(ItemService.java:36)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.qa.connecting.controller.ItemController.readAllItems(ItemController.java:66)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.qa.connecting.controller.ItemController.run(ItemController.java:34)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.qa.connecting.Inv.invMenu(Inv.java:93)
+2020-06-11 11:00:41 DEBUG ItemService:40 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:03:05 INFO  Runner:18 - Database username: 
+2020-06-11 11:03:11 INFO  Runner:20 - Database password: 
+2020-06-11 11:03:17 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:03:19 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:03:21 INFO  ItemController:52 - item name
+2020-06-11 11:03:40 INFO  ItemController:55 - item quantity
+2020-06-11 11:03:42 INFO  ItemController:58 - item price
+2020-06-11 11:03:44 ERROR ItemService:26 - Unknown column 'x' in 'field list'
+2020-06-11 11:03:44 DEBUG ItemService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:03:44 DEBUG ItemService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:03:44 DEBUG ItemService:28 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:03:44 DEBUG ItemService:28 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.qa.connecting.dao.DatabaseConnection.sendUpdate(DatabaseConnection.java:32)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.qa.connecting.dao.ItemsDao.insertItems(ItemsDao.java:25)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.qa.connecting.services.ItemService.insertItem(ItemService.java:24)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.qa.connecting.controller.ItemController.insert(ItemController.java:62)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.qa.connecting.controller.ItemController.run(ItemController.java:25)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.qa.connecting.Inv.invMenu(Inv.java:93)
+2020-06-11 11:03:44 DEBUG ItemService:28 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:03:44 INFO  ItemController:26 - Would you like to add another item?
+2020-06-11 11:03:44 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:03:55 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:03:59 INFO  ItemController:52 - item name
+2020-06-11 11:04:36 INFO  Runner:18 - Database username: 
+2020-06-11 11:04:39 INFO  Runner:20 - Database password: 
+2020-06-11 11:04:45 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:04:47 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:04:55 ERROR Inv:70 - Not a valid selection. Please re-enter
+2020-06-11 11:05:03 INFO  ItemController:52 - item name
+2020-06-11 11:05:09 INFO  ItemController:55 - item quantity
+2020-06-11 11:05:11 INFO  ItemController:58 - item price
+2020-06-11 11:05:12 INFO  ItemController:26 - Would you like to add another item?
+2020-06-11 11:05:12 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:05:16 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:05:18 ERROR ItemService:38 - Table 'inventoryDB.Items' doesn't exist
+2020-06-11 11:05:18 DEBUG ItemService:40 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:05:18 DEBUG ItemService:40 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:05:18 DEBUG ItemService:40 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:05:18 DEBUG ItemService:40 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2439)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1365)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.qa.connecting.dao.ItemsDao.readAllItems(ItemsDao.java:32)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.qa.connecting.services.ItemService.readItem(ItemService.java:36)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.qa.connecting.controller.ItemController.readAllItems(ItemController.java:66)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.qa.connecting.controller.ItemController.run(ItemController.java:34)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.qa.connecting.Inv.invMenu(Inv.java:93)
+2020-06-11 11:05:18 DEBUG ItemService:40 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:06:00 INFO  Runner:18 - Database username: 
+2020-06-11 11:06:03 INFO  Runner:20 - Database password: 
+2020-06-11 11:06:09 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:06:10 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:06:13 ERROR ItemService:38 - Operation not allowed after ResultSet closed
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.mysql.jdbc.ResultSetImpl.checkClosed(ResultSetImpl.java:733)
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.mysql.jdbc.ResultSetImpl.next(ResultSetImpl.java:6279)
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.qa.connecting.dao.ItemsDao.readAllItems(ItemsDao.java:34)
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.qa.connecting.services.ItemService.readItem(ItemService.java:36)
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.qa.connecting.controller.ItemController.readAllItems(ItemController.java:66)
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.qa.connecting.controller.ItemController.run(ItemController.java:34)
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.qa.connecting.Inv.invMenu(Inv.java:93)
+2020-06-11 11:06:13 DEBUG ItemService:40 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:07:01 INFO  Runner:18 - Database username: 
+2020-06-11 11:07:04 INFO  Runner:20 - Database password: 
+2020-06-11 11:07:10 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:07:12 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:07:13 ERROR ItemService:38 - Operation not allowed after ResultSet closed
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.mysql.jdbc.ResultSetImpl.checkClosed(ResultSetImpl.java:733)
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.mysql.jdbc.ResultSetImpl.next(ResultSetImpl.java:6279)
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.qa.connecting.dao.ItemsDao.readAllItems(ItemsDao.java:34)
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.qa.connecting.services.ItemService.readItem(ItemService.java:36)
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.qa.connecting.controller.ItemController.readAllItems(ItemController.java:66)
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.qa.connecting.controller.ItemController.run(ItemController.java:34)
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.qa.connecting.Inv.invMenu(Inv.java:93)
+2020-06-11 11:07:13 DEBUG ItemService:40 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:09:19 INFO  Runner:18 - Database username: 
+2020-06-11 11:09:21 INFO  Runner:20 - Database password: 
+2020-06-11 11:09:27 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:09:28 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:09:31 INFO  ItemService:44 - com.qa.connecting.model.Items@50b494a6
+2020-06-11 11:09:31 INFO  ItemService:44 - com.qa.connecting.model.Items@32709393
+2020-06-11 11:09:31 INFO  ItemService:44 - com.qa.connecting.model.Items@3d99d22e
+2020-06-11 11:09:31 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:11:55 INFO  Runner:18 - Database username: 
+2020-06-11 11:11:57 INFO  Runner:20 - Database password: 
+2020-06-11 11:12:04 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:12:06 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:12:08 INFO  ItemService:44 - com.qa.connecting.model.Items@50b494a6
+2020-06-11 11:12:08 INFO  ItemService:44 - com.qa.connecting.model.Items@32709393
+2020-06-11 11:12:08 INFO  ItemService:44 - com.qa.connecting.model.Items@3d99d22e
+2020-06-11 11:12:08 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:12:13 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:12:17 INFO  ItemController:71 - enter the Item id you would like to update: 
+2020-06-11 11:12:22 INFO  ItemController:74 - item name: 
+2020-06-11 11:12:32 INFO  ItemController:77 - item quantity: 
+2020-06-11 11:12:35 INFO  ItemController:80 - item price: 
+2020-06-11 11:12:36 ERROR ItemService:52 - Unknown column 'quanitity' in 'field list'
+2020-06-11 11:12:36 DEBUG ItemService:54 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:12:36 DEBUG ItemService:54 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:12:36 DEBUG ItemService:54 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:12:36 DEBUG ItemService:54 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.qa.connecting.dao.DatabaseConnection.sendUpdate(DatabaseConnection.java:32)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.qa.connecting.dao.ItemsDao.updateItems(ItemsDao.java:53)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.qa.connecting.services.ItemService.updateItems(ItemService.java:50)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.qa.connecting.controller.ItemController.updateItems(ItemController.java:84)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.qa.connecting.controller.ItemController.run(ItemController.java:37)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.qa.connecting.Inv.invMenu(Inv.java:93)
+2020-06-11 11:12:36 DEBUG ItemService:54 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:12:36 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:14:50 INFO  Runner:18 - Database username: 
+2020-06-11 11:14:53 INFO  Runner:20 - Database password: 
+2020-06-11 11:14:58 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:15:05 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:15:08 INFO  ItemService:44 - com.qa.connecting.model.Items@50b494a6
+2020-06-11 11:15:08 INFO  ItemService:44 - com.qa.connecting.model.Items@32709393
+2020-06-11 11:15:08 INFO  ItemService:44 - com.qa.connecting.model.Items@3d99d22e
+2020-06-11 11:15:08 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:15:11 WARN  Inv:48 - Not in the options. please choose from provided list
+2020-06-11 11:15:14 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:15:18 INFO  ItemController:71 - enter the Item id you would like to update: 
+2020-06-11 11:15:20 INFO  ItemController:74 - item name: 
+2020-06-11 11:15:24 INFO  ItemController:77 - item quantity: 
+2020-06-11 11:15:27 INFO  ItemController:80 - item price: 
+2020-06-11 11:15:30 ERROR ItemService:52 - Unknown column 'quanitity' in 'field list'
+2020-06-11 11:15:30 DEBUG ItemService:54 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:15:30 DEBUG ItemService:54 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:15:30 DEBUG ItemService:54 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:15:30 DEBUG ItemService:54 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.qa.connecting.dao.DatabaseConnection.sendUpdate(DatabaseConnection.java:32)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.qa.connecting.dao.ItemsDao.updateItems(ItemsDao.java:53)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.qa.connecting.services.ItemService.updateItems(ItemService.java:50)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.qa.connecting.controller.ItemController.updateItems(ItemController.java:84)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.qa.connecting.controller.ItemController.run(ItemController.java:37)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.qa.connecting.Inv.invMenu(Inv.java:93)
+2020-06-11 11:15:30 DEBUG ItemService:54 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:15:30 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:16:03 INFO  Runner:18 - Database username: 
+2020-06-11 11:16:07 INFO  Runner:20 - Database password: 
+2020-06-11 11:16:12 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:16:13 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:16:16 INFO  ItemController:71 - enter the Item id you would like to update: 
+2020-06-11 11:16:19 INFO  ItemController:74 - item name: 
+2020-06-11 11:16:25 INFO  ItemController:77 - item quantity: 
+2020-06-11 11:16:26 INFO  ItemController:80 - item price: 
+2020-06-11 11:16:29 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:16:34 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:16:38 INFO  ItemController:89 - enter the Item id you would like to delete: 
+2020-06-11 11:16:41 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:16:44 INFO  Inv:101 - EXIT!!!!!
+2020-06-11 11:16:49 INFO  Runner:18 - Database username: 
+2020-06-11 11:16:53 INFO  Runner:20 - Database password: 
+2020-06-11 11:16:59 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:17:02 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:17:04 INFO  OrderController:53 - enter the Customer id you would like to create an order for: 
+2020-06-11 11:17:06 ERROR OrderService:26 - Cannot add or update a child row: a foreign key constraint fails (`inventoryDB`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`fk_customer_id`) REFERENCES `customer` (`customer_id`))
+2020-06-11 11:17:06 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:17:06 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:17:06 DEBUG OrderService:28 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:17:06 DEBUG OrderService:28 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.qa.connecting.dao.DatabaseConnection.sendUpdate(DatabaseConnection.java:32)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.qa.connecting.dao.OrderDao.insertOrder(OrderDao.java:24)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.qa.connecting.services.OrderService.insertOrder(OrderService.java:24)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.insertOrder(OrderController.java:57)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.run(OrderController.java:26)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.qa.connecting.Inv.invMenu(Inv.java:98)
+2020-06-11 11:17:06 DEBUG OrderService:28 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:17:06 INFO  OrderController:27 - Would you like to add another order?
+2020-06-11 11:17:06 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:17:49 INFO  Runner:18 - Database username: 
+2020-06-11 11:17:52 INFO  Runner:20 - Database password: 
+2020-06-11 11:17:57 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:17:59 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:18:03 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:18:11 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:18:14 INFO  OrderController:77 - enter the order id you would like to delete: 
+2020-06-11 11:18:17 ERROR OrderService:66 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-06-11 11:18:17 DEBUG OrderService:68 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:18:17 DEBUG OrderService:68 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:18:17 DEBUG OrderService:68 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:18:17 DEBUG OrderService:68 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.qa.connecting.dao.DatabaseConnection.sendUpdate(DatabaseConnection.java:32)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.qa.connecting.dao.OrderDao.deleteOrder(OrderDao.java:57)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.qa.connecting.services.OrderService.deleteOrder(OrderService.java:64)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.qa.connecting.controller.OrderController.deleteOrder(OrderController.java:79)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.qa.connecting.controller.OrderController.run(OrderController.java:41)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.qa.connecting.Inv.invMenu(Inv.java:98)
+2020-06-11 11:18:17 DEBUG OrderService:68 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:18:17 INFO  OrderController:80 - order deleted!
+2020-06-11 11:18:17 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:22:06 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:22:09 INFO  OrderController:77 - enter the order id you would like to delete: 
+2020-06-11 11:22:19 ERROR OrderService:66 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-06-11 11:22:19 DEBUG OrderService:68 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:22:19 DEBUG OrderService:68 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:22:19 DEBUG OrderService:68 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:22:19 DEBUG OrderService:68 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.qa.connecting.dao.DatabaseConnection.sendUpdate(DatabaseConnection.java:32)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.qa.connecting.dao.OrderDao.deleteOrder(OrderDao.java:57)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.qa.connecting.services.OrderService.deleteOrder(OrderService.java:64)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.qa.connecting.controller.OrderController.deleteOrder(OrderController.java:79)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.qa.connecting.controller.OrderController.run(OrderController.java:41)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.qa.connecting.Inv.invMenu(Inv.java:98)
+2020-06-11 11:22:19 DEBUG OrderService:68 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:22:19 INFO  OrderController:80 - order deleted!
+2020-06-11 11:22:19 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:22:46 INFO  Runner:18 - Database username: 
+2020-06-11 11:22:50 INFO  Runner:20 - Database password: 
+2020-06-11 11:22:55 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:22:58 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:23:01 INFO  OrderService:46 - com.qa.connecting.model.Order@50b494a6
+2020-06-11 11:23:01 INFO  OrderService:46 - com.qa.connecting.model.Order@32709393
+2020-06-11 11:23:01 INFO  OrderService:46 - com.qa.connecting.model.Order@3d99d22e
+2020-06-11 11:23:01 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:23:06 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:23:09 INFO  OrderController:77 - enter the order id you would like to delete: 
+2020-06-11 11:23:12 ERROR OrderService:66 - Unknown column 'orders_id' in 'where clause'
+2020-06-11 11:23:12 DEBUG OrderService:68 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:23:12 DEBUG OrderService:68 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:23:12 DEBUG OrderService:68 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:23:12 DEBUG OrderService:68 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.qa.connecting.dao.DatabaseConnection.sendUpdate(DatabaseConnection.java:32)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.qa.connecting.dao.OrderDao.deleteOrder(OrderDao.java:57)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.qa.connecting.services.OrderService.deleteOrder(OrderService.java:64)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.qa.connecting.controller.OrderController.deleteOrder(OrderController.java:79)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.qa.connecting.controller.OrderController.run(OrderController.java:41)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.qa.connecting.Inv.invMenu(Inv.java:98)
+2020-06-11 11:23:12 DEBUG OrderService:68 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:23:12 INFO  OrderController:80 - order deleted!
+2020-06-11 11:23:12 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:23:46 INFO  Runner:18 - Database username: 
+2020-06-11 11:23:49 INFO  Runner:20 - Database password: 
+2020-06-11 11:23:55 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:24:00 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:24:02 INFO  OrderController:77 - enter the order id you would like to delete: 
+2020-06-11 11:24:03 INFO  OrderController:80 - order deleted!
+2020-06-11 11:24:03 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:24:09 INFO  Inv:101 - EXIT!!!!!
+2020-06-11 11:24:13 INFO  Runner:18 - Database username: 
+2020-06-11 11:24:15 INFO  Runner:20 - Database password: 
+2020-06-11 11:24:42 INFO  Runner:18 - Database username: 
+2020-06-11 11:24:44 INFO  Runner:20 - Database password: 
+2020-06-11 11:24:49 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:24:53 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:24:55 INFO  OrderController:53 - enter the Customer id you would like to create an order for: 
+2020-06-11 11:24:59 ERROR OrderService:26 - Cannot add or update a child row: a foreign key constraint fails (`inventoryDB`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`fk_customer_id`) REFERENCES `customer` (`customer_id`))
+2020-06-11 11:24:59 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:24:59 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:24:59 DEBUG OrderService:28 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:24:59 DEBUG OrderService:28 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.qa.connecting.dao.DatabaseConnection.sendUpdate(DatabaseConnection.java:32)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.qa.connecting.dao.OrderDao.insertOrder(OrderDao.java:24)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.qa.connecting.services.OrderService.insertOrder(OrderService.java:24)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.insertOrder(OrderController.java:57)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.run(OrderController.java:26)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.qa.connecting.Inv.invMenu(Inv.java:98)
+2020-06-11 11:24:59 DEBUG OrderService:28 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:24:59 INFO  OrderController:27 - Would you like to add another order?
+2020-06-11 11:24:59 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:25:07 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:25:10 INFO  CustomerService:45 - Customer [customer_id=1, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=20]
+2020-06-11 11:25:10 INFO  CustomerService:45 - Customer [customer_id=3, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 11:25:10 INFO  CustomerService:45 - Customer [customer_id=5, name=Jane, address=55 Potters Avenue, phone_number=55 Potters Avenue, email=Jane98@pobox.com, age=27]
+2020-06-11 11:25:10 INFO  CustomerService:45 - Customer [customer_id=6, name=john, address=56 zoo lane, phone_number=56 zoo lane, email=john@inbox.com, age=24]
+2020-06-11 11:25:10 INFO  CustomerService:45 - Customer [customer_id=7, name=Simon, address=64 Zoo Lane, phone_number=64 Zoo Lane, email=kin@inbox.com, age=0]
+2020-06-11 11:25:10 INFO  CustomerService:45 - Customer [customer_id=8, name=Bruce, address=87 Ivy Road, phone_number=87 Ivy Road, email=gotham@batbox.com, age=0]
+2020-06-11 11:25:10 INFO  CustomerService:45 - Customer [customer_id=9, name=Amanda, address=12 Gunners Street, phone_number=12 Gunners Street, email=Ray2018@pinmail.com, age=0]
+2020-06-11 11:25:10 INFO  CustomerService:45 - Customer [customer_id=10, name=wqq, address=qq, phone_number=qq, email=qq, age=3423]
+2020-06-11 11:25:10 INFO  CustomerService:45 - Customer [customer_id=12, name=mary, address=66 lamb lane, phone_number=66 lamb lane, email=mary@sheepish.com, age=78]
+2020-06-11 11:25:10 INFO  CustomerService:45 - Customer [customer_id=13, name=qwert, address=qwetty, phone_number=qwetty, email=qwerty, age=23332]
+2020-06-11 11:25:10 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:26:05 INFO  Runner:18 - Database username: 
+2020-06-11 11:26:08 INFO  Runner:20 - Database password: 
+2020-06-11 11:26:13 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:26:17 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:26:22 INFO  OrderController:53 - enter the Customer id you would like to create an order for: 
+2020-06-11 11:26:26 ERROR OrderService:26 - Cannot add or update a child row: a foreign key constraint fails (`inventoryDB`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`fk_customer_id`) REFERENCES `customer` (`customer_id`))
+2020-06-11 11:26:26 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2020-06-11 11:26:26 DEBUG OrderService:28 - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2020-06-11 11:26:26 DEBUG OrderService:28 - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2020-06-11 11:26:26 DEBUG OrderService:28 - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.mysql.jdbc.Util.getInstance(Util.java:386)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1536)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2585)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.mysql.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1464)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.qa.connecting.dao.DatabaseConnection.sendUpdate(DatabaseConnection.java:32)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.qa.connecting.dao.OrderDao.insertOrder(OrderDao.java:24)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.qa.connecting.services.OrderService.insertOrder(OrderService.java:24)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.insertOrder(OrderController.java:57)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.qa.connecting.controller.OrderController.run(OrderController.java:26)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.qa.connecting.Inv.invMenu(Inv.java:98)
+2020-06-11 11:26:26 DEBUG OrderService:28 - com.qa.connecting.Runner.main(Runner.java:26)
+2020-06-11 11:26:26 INFO  OrderController:27 - Would you like to add another order?
+2020-06-11 11:26:26 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 
+2020-06-11 11:26:44 INFO  Inv:61 - Please select from: INSERT, READ, UPDATE, DELETE, RETURN, 
+2020-06-11 11:27:25 INFO  OrderController:65 - enter the Order id you would like to update: 
+2020-06-11 11:27:30 INFO  OrderController:68 - Enter the customer ID you would like to uodate for this order: 
+2020-06-11 11:27:38 INFO  OrderController:73 - order updated!
+2020-06-11 11:27:38 INFO  Inv:38 - Please select from: CUSTOMERS, ITEMS, ORDERS, EXIT, 

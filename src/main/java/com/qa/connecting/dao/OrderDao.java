@@ -1,7 +1,8 @@
-package com.qa.connecting.doa;
+package com.qa.connecting.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,15 +18,16 @@ public class OrderDao {
 	}
 
 	public void insertOrder(Order order) throws SQLException {
-		String sql = "INSERT INTO orders(fk_customer_id, total, item_description) values ('"
-				+ order.getFkCustomerId() + "');";
+		String sql = "INSERT INTO orders(fk_customer_id) values ("
+				+ order.getFkCustomerId() + ");";
 
 		databaseConnection.sendUpdate(sql);
 	}
 
 	public List<Order> readAllOrders() throws SQLException {
 		String sql = "SELECT * FROM orders";
-		ResultSet resultSet = databaseConnection.sendQuery(sql);
+		Statement statement = databaseConnection.getStatement();
+		ResultSet resultSet = statement.executeQuery(sql);
 		ArrayList<Order> orders = new ArrayList<>();
 		while(resultSet.next()) {
 			Order order = new Order();
@@ -33,14 +35,16 @@ public class OrderDao {
 			order.setFkCustomerId(resultSet.getInt("fk_customer_id"));
 			orders.add(order);
 		}
+		statement.close();
+		resultSet.close();
 		
 		return orders;
 	}
 
 
 	public void updateOrder(Order order) throws SQLException {
-		String sql = "UPDATE orders SET fk_customer_id='" 
-				+ order.getFkCustomerId() +  "'WHERE order_id ='" +order.getOrderId()+"';";
+		String sql = "UPDATE orders SET fk_customer_id=" 
+				+ order.getFkCustomerId() +  " WHERE order_id =" +order.getOrderId()+";";
 
 			databaseConnection.sendUpdate(sql);
 	}
@@ -48,7 +52,7 @@ public class OrderDao {
 	
 
 	public void deleteOrder(int orderId) throws SQLException {
-		String sql = "Delete from orders WHERE orders_id= '" + orderId + "');";
+		String sql = "Delete from orders WHERE order_id= " + orderId + ";";
 
 			databaseConnection.sendUpdate(sql);
 	}

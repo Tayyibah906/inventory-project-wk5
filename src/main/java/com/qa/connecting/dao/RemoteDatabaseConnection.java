@@ -1,4 +1,4 @@
-package com.qa.connecting.doa;
+package com.qa.connecting.dao;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -13,7 +13,7 @@ public class RemoteDatabaseConnection extends DatabaseConnection {
 	
 	public void openConnection() {
 		try {
-			setConnection(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306/inventorydb", getUser(), getPassword()));;
+			setConnection(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306/inventoryDB", getUser(), getPassword()));;
 		} catch (SQLException e) {
 			e.printStackTrace();
 			throw new ConnectionNotMadeException("Remote database is not accessible: " + e.getMessage());
