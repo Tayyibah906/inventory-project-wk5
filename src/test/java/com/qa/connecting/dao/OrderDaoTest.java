@@ -44,12 +44,12 @@ public class OrderDaoTest {
 
 	@BeforeClass
 	public static void intialise() throws SQLException {
-		databaseConnection = new TestingDatabaseConnection("root", "Carpet29");
+		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306", "root", "Carpet29"), SCHEMA_LOCATION);
 	}
 
 	@Before
 	public void setup() throws SQLException {
-		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306", "root", "Carpet29"), SCHEMA_LOCATION);
+		databaseConnection = new TestingDatabaseConnection("root", "Carpet29");
 		sendToDB(databaseConnection.getConnection(), DATA_LOCATION);
 		orderdao = new OrderDao(databaseConnection);
 	}
@@ -84,7 +84,7 @@ public class OrderDaoTest {
 	}
 
 	@Test
-	public final void testInsertCustomer() throws SQLException {
+	public final void testInsertOrder() throws SQLException {
 		Order insertTest = new Order(3);
 		orderdao.insertOrder(insertTest);
 
@@ -100,7 +100,7 @@ public class OrderDaoTest {
 	}
 
 	@Test
-	public final void testUpdateCustomer() throws SQLException {
+	public final void testUpdateOrder() throws SQLException {
 		Order order = new Order(2,4);
 		orderdao.updateOrder(order);
 
@@ -110,7 +110,7 @@ public class OrderDaoTest {
 	}
 
 	@Test
-	public final void testDeleteCustomer() throws SQLException {
+	public final void testDeleteOrder() throws SQLException {
 		OrderDao orderdao = new OrderDao(databaseConnection);
 		Order deleteTest = new Order(1);
 		orderdao.insertOrder(deleteTest);
