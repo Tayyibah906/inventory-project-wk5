@@ -16,25 +16,20 @@ public class CustomerTest {
 
 	@Test
 	public void settersTest() {
-//		assertNotNull(customer.getCustomerId());
-//		assertNotNull(customer.getName());
-//		assertNotNull(customer.getAddress());
-//		assertNotNull(customer.getPhoneNumber());
-//		assertNotNull(customer.getEmail());
-//		assertNotNull(customer.getAge());
+
 
 		customer.setCustomerId(20);
 		assertEquals(20, customer.getCustomerId());
 		customer.setName("mark");
 		assertEquals("mark", customer.getName());
-//		customer.setAddress(null);
-//		assertNotNull(customer.getAddress());
-//		customer.setPhoneNumber(null);
-//		assertNotNull(customer.getPhoneNumber());
-//		customer.setEmail(null);
-//		assertNotNull(customer.getEmail());
-//		customer.setAge(0);
-//		assertNotNull(customer.getAge());
+		customer.setAddress("43 rose avenue");;
+		assertEquals("43 rose avenue",customer.getAddress());
+		customer.setPhoneNumber("0798543");
+		assertEquals("0798543", customer.getPhoneNumber());
+		customer.setEmail("mark@mopbox.com");
+		assertEquals("mark@mopbox.com", customer.getEmail());
+		customer.setAge(220);
+		assertEquals(220, customer.getAge());
 	}
 
 

@@ -1,3 +1,4 @@
+drop database if exists testDB;
 create database if not exists testDB;
 use testDB;
 CREATE TABLE customer(customer_id int NOT NULL auto_increment,name varchar (20) NOT NULL,Address varchar (30),phone_number varchar (11),email varchar (30),age int,PRIMARY KEY(customer_id));

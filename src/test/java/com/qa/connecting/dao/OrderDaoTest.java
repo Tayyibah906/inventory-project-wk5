@@ -21,12 +21,14 @@ import com.qa.connecting.model.Order;
 
 public class OrderDaoTest {
 
-	static DatabaseConnection databaseConnection;
+	static TestingDatabaseConnection databaseConnection;
 	static final String SCHEMA_LOCATION = "src\\test\\resources\\Schema.sql";
 	static final String DATA_LOCATION = "src\\test\\resources\\Data.sql";
 	static final String CLEAR_LOCATION = "src\\test\\resources\\ClearDB.sql";
 	static final String DROP_LOCATION = "src\\test\\resources\\DropDB.sql";
 
+	private OrderDao orderdao;
+	
 	private static void sendToDB(Connection connection, String fileLocation) {
 		try (BufferedReader br = new BufferedReader(new FileReader(fileLocation));) {
 			String string;
@@ -42,39 +44,32 @@ public class OrderDaoTest {
 
 	@BeforeClass
 	public static void intialise() throws SQLException {
-		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306", "root", "Carpet29"), SCHEMA_LOCATION);
+		databaseConnection = new TestingDatabaseConnection("root", "Carpet29");
 	}
 
 	@Before
 	public void setup() throws SQLException {
-		databaseConnection = new TestingDatabaseConnection("root","Carpet29");
+		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306", "root", "Carpet29"), SCHEMA_LOCATION);
 		sendToDB(databaseConnection.getConnection(), DATA_LOCATION);
+		orderdao = new OrderDao(databaseConnection);
 	}
-	
+
 	@After
 	public void teardown() throws SQLException {
-		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80/testDB:3306", "root", "Carpet29"),CLEAR_LOCATION);
+		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306/testDB", "root", "Carpet29"),
+				CLEAR_LOCATION);
+		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306", "root", "Carpet29"), DROP_LOCATION);
 	}
-	
+
 	@AfterClass
 	public static void finish() throws SQLException {
-		sendToDB(DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306", "root", "Carpet29"), DROP_LOCATION);
 		databaseConnection.closeConnection();
 	}
-	
-	
-//	Insert into orders(fk_customer_id) values(3);
-//	Insert into orders(fk_customer_id) values(2);
-//	Insert into orders(fk_customer_id) values(5);
-//	Insert into orders(fk_customer_id) values(6);
-//	Insert into orders(fk_customer_id) values(4);
-//	Insert into orders(fk_customer_id) values(7);
-//	Insert into orders(fk_customer_id) values(1);
-	
+
 	@Test
-	public void testReadAllOrders() throws SQLException {
+	public final void testReadAllOrders() throws SQLException {
 		OrderDao orderdao = new OrderDao(databaseConnection);
-		Order readTest = new Order(3);
+		Order readTest = new Order(4, 2);
 		orderdao.insertOrder(readTest);
 
 		String query = "SELECT * FROM orders";
@@ -85,12 +80,11 @@ public class OrderDaoTest {
 			count++;
 		}
 
-		assertEquals(7, count);
+		assertEquals(4, count);
 	}
 
 	@Test
-	public void testInsertCustomer() throws SQLException {
-		OrderDao orderdao = new OrderDao(databaseConnection);
+	public final void testInsertCustomer() throws SQLException {
 		Order insertTest = new Order(3);
 		orderdao.insertOrder(insertTest);
 
@@ -102,23 +96,23 @@ public class OrderDaoTest {
 			count++;
 		}
 
-		assertEquals(7, count);
+		assertEquals(5, count);
 	}
 
 	@Test
-	public void testUpdateCustomer() throws SQLException {
-		OrderDao orderdao = new OrderDao(databaseConnection);
-		Order updateTest = new Order(5);
-		orderdao.insertOrder(updateTest);
+	public final void testUpdateCustomer() throws SQLException {
+		Order order = new Order(2,4);
+		orderdao.updateOrder(order);
 
-
-		assertEquals(5, updateTest.getFkCustomerId());
+		ResultSet resultSet =databaseConnection.getStatement().executeQuery("SELECT fk_customer_id from orders where order_id = " + 2 );
+		resultSet.next();
+		assertEquals(4, resultSet.getInt("fk_customer_id"));
 	}
 
 	@Test
 	public final void testDeleteCustomer() throws SQLException {
 		OrderDao orderdao = new OrderDao(databaseConnection);
-		Order deleteTest = new Order(5);
+		Order deleteTest = new Order(1);
 		orderdao.insertOrder(deleteTest);
 
 		String query = "SELECT * FROM orders";
@@ -129,8 +123,7 @@ public class OrderDaoTest {
 			count++;
 		}
 
-		assertEquals(8, count);
+		assertEquals(5, count);
 	}
-
 
 }

@@ -13,7 +13,7 @@ public class TestingDatabaseConnection extends DatabaseConnection {
 	public void openConnection() {
 		try {
 			setConnection(
-					DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306/testDB", getUser(), getPassword()));
+					DriverManager.getConnection("jdbc:mysql://35.226.67.80:3306/testDB?SSL=false", getUser(), getPassword()));
 			;
 		} catch (SQLException e) {
 			e.printStackTrace();

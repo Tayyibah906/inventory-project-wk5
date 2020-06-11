@@ -77,7 +77,7 @@ public class CustomerDaoTest {
 			count++;
 		}
 
-		assertEquals(9, count);
+		assertEquals(6, count);
 	}
 
 	@Test
@@ -93,7 +93,7 @@ public class CustomerDaoTest {
 		while (rs.next()) {
 			count++;
 		}
-		assertEquals(14, count);
+		assertEquals(7, count);
 
 	}
 
@@ -124,7 +124,7 @@ public class CustomerDaoTest {
 		while (rs.next()) {
 			count++;
 		}
-		assertEquals(19, count);
+		assertEquals(8, count);
 	}
 
 }
