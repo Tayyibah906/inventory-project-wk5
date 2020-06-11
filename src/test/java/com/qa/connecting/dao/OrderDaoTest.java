@@ -58,13 +58,7 @@ public class OrderDaoTest {
 
 	@Test
 	public final void testInsertOrder() throws SQLException {
-<<<<<<< HEAD
-		Order insertTest = new Order(3,2);
-		orderdao.insertOrder(insertTest);
-=======
 		final int count = getCount();
->>>>>>> d3c3406f62e6ecc4bad5244468f81324f27b56cd
-
 		Order insertTest = new Order(3, 1);
 		orderdao.insertOrder(insertTest);
 
@@ -72,14 +66,10 @@ public class OrderDaoTest {
 	}
 
 	@Test
-<<<<<<< HEAD
-	public  void testUpdateOrder() throws SQLException {
-		Order order = new Order(2,4);
-=======
+
 	public final void testUpdateOrder() throws SQLException {
 
 		Order order = new Order(2, 1);
->>>>>>> d3c3406f62e6ecc4bad5244468f81324f27b56cd
 		orderdao.updateOrder(order);
 
 		ResultSet resultSet = databaseConnection.getStatement()
@@ -88,17 +78,8 @@ public class OrderDaoTest {
 		assertEquals(4, resultSet.getInt("fk_customer_id"));
 	}
 
-<<<<<<< HEAD
-	@Test
-	public  void testDeleteOrder() throws SQLException {
-		OrderDao orderdao = new OrderDao(databaseConnection);
-		Order deleteTest = new Order(1, 2);
-		orderdao.insertOrder(deleteTest);
 
-		String query = "SELECT * FROM orders";
-=======
 	private int getCount() throws SQLException {
->>>>>>> d3c3406f62e6ecc4bad5244468f81324f27b56cd
 		Statement statement = databaseConnection.getStatement();
 		ResultSet rs = statement.executeQuery("SELECT * FROM orders");
 		int count = 0;
